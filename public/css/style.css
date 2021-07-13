@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+/*文字サイズを23pxに固定*/
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+* {
+  font-size: 20px;
+}
+
+#service-title ul {
+  /*箇条書きのポッチを消す*/
+  list-style-type: none;
+  /*左右中央寄せは親要素に対して指定*/
+  text-align: left;
+}
+
+#service-title ul li {
+  display: inline-block;
+}
+
+/*サービスタイトルをポップ体に*/
+
+#service-title-text {
+  font-family: "Hachi Maru Pop", cursive;
+  font-weight: bold;
+}
+
+/**/
+
+.top-menu {
+  background-color: #eb8f34;
+  font-weight: bold;
+  height: 80px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* index */
+
+/* carousel slider */
+
+#carousel-card .carousel-control-next,
+#carousel-card .carousel-control-prev {
+  width: 5%;
+  background-color: #333;
+}
+
+/* */
+
+.sidebar_fixed {
+  position: sticky;
+  top: 60px;
+}
+
+.sidebar_fixed li {
+  list-style-type: disclosure-closed;
+}
+
+.sidebar_content {
+  margin-bottom: 100px;
+}
+
+/* index.blade.php サービスの手順画像 */
+
+.square {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/*カテゴリ*/
+
+ul {
+  list-style-type: none;
+}
+
+/*question and answer*/
+
+/*index.blade.htmlのQ&Aのテーブルヘッダー*/
+
+/*上下3px 左右10pxずつ*/
+
+.container .QnA table th {
+  padding: 3px 10px;
+}
+
+.container .QnA th:nth-child(odd) {
+  background: #3366ff;
+  color: #ffffff;
+}
+
+.container .QnA th:nth-child(even) {
+  background: #ccccff;
+}
+
+.container .QnA td:nth-child(odd) {
+  color: #3366ff;
+}
+
+.container .QnA table td {
+  padding: 3px 10px;
+  background-color: #ffffff;
+}
+
+/*footer*/
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 0;
+  background-color: #eb8f34;
+  color: #fff;
+}
+
+/*入力欄*/
+
+.form-group {
+  vertical-align: top;
+}
+
+/*数量直接入力欄の横幅*/
+
+.form_input_number {
+  width: 50px;
+}
+
+/*PC用のcss*/
+
+@media screen and (min-width: 767px) {
+  #sidebar {
+    position: sticky;
+    top: 0;
+  }
+
+  .drawer {
+    display: none;
+  }
+
+  #output {
+    display: none;
+  }
+
+  .imageNname {
+    height: 70%;
+    overflow: hidden;
+  }
+
+  .sidebar_fixed a {
+    color: #1d3994;
+  }
+
+  .col-md-4 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+
+  /*carts/cart.blade.html*/
+
+  br {
+    display: none;
+  }
+
+  /*admin*/
+
+  .table-striped th {
+    text-align: center;
+    font-size: 16px;
+    /*枠を超えた文章を見えないようにします*/
+    overflow: hidden;
+    /*改行されないようにします*/
+    text-overflow: ellipsis;
+    /*三点リーダー（…）を表示するための指定*/
+    white-space: nowrap;
+  }
+
+  .table-striped td {
+    font-size: 16px;
+    /*枠を超えた文章を見えないようにします*/
+    overflow: hidden;
+    /*改行されないようにします*/
+    text-overflow: ellipsis;
+    /*三点リーダー（…）を表示するための指定*/
+    white-space: nowrap;
+  }
+}
+
+/*タブレット用のcss*/
+
+@media only screen and (max-width: 768px) {
+  #sidebar {
+    position: sticky;
+    top: 0;
+  }
+
+  .price {
+    white-space: nowrap;
+  }
+
+  .imageNname {
+    height: 70%;
+  }
+
+  .cart_btn {
+    white-space: nowrap;
+  }
+
+  .col-sm-4 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+/*スマホ用のcss*/
+
+@media only screen and (max-width: 479px) {
+  #sidebar {
+    display: none;
+  }
+
+  .drawer--left.drawer-open .drawer-hamburger {
+    left: 10.65rem;
+  }
+
+  .drawer-nav {
+    position: fixed;
+    background-color: #eb8f34;
+    width: 14.25rem;
+  }
+
+  .drawer-menu li {
+    list-style-type: none;
+  }
+
+  /* 各ページの商品紹介の「価格」の折り返し禁止 */
+
+  .price {
+    white-space: nowrap;
+  }
+
+  /*
+    img.img-fluid{
+      width: 200px;
+      height: 150px;
+    }
+    .col-6 {
+      margin-top: 35px;
+      margin-bottom: 25px;
+    }*/
+
+  /*drawer.jsによる6秒間吹き出しメッセージ*/
+
+  #drawer_message {
+    color: #ffffff;
+    /*ボックスの位置を指定する */
+    position: relative;
+    /* ボックスの背景色を指定する */
+    background-color: #212529;
+    /* ボックスの余白を指定する */
+    padding: 5px 10px;
+    /* ボックスに角丸を指定する */
+    border-radius: 20px;
+    width: 250px;
+    margin-left: 20px;
+  }
+
+  #drawer_message:after {
+    /* 三角形の位置指定 */
+    position: absolute;
+    /* 三角形のコンテンツ */
+    content: "";
+    /* 上部から配置の基準位置を決める */
+    top: -16%;
+    /* 左から配置の基準位置を決める */
+    left: 10%;
+    /* ボーダーの大きさ分左にずらす指定 */
+    margin-left: -10px;
+    /* ボックスの横幅をなしに指定する */
+    height: 0px;
+    /* ボックスの高さをなしに指定する */
+    width: 0px;
+    /* 境界線を実線で指定する */
+    border: 10px solid;
+    /* 境界線の色を透過に指定する */
+    border-color: transparent;
+    /* 境界線の上部を実線で指定する（可視化） */
+    border-bottom: 10px solid #212529;
+  }
+
+  #drawer_message_down {
+    color: #ffffff;
+    /*ボックスの位置を指定する */
+    position: relative;
+    /* ボックスの背景色を指定する */
+    background-color: #212529;
+    /* ボックスの余白を指定する */
+    padding: 5px 10px;
+    /* ボックスに角丸を指定する */
+    border-radius: 20px;
+    width: 140px;
+    margin-left: 65px;
+  }
+
+  #drawer_message_down:after {
+    /* 三角形の位置指定 */
+    position: absolute;
+    /* 三角形のコンテンツ */
+    content: "";
+    /* 上部から配置の基準位置を決める */
+    top: 28%;
+    /* 左から配置の基準位置を決める */
+    right: -42%;
+    /* ボーダーの大きさ分左にずらす指定 */
+    margin-right: 40px;
+    /* ボックスの横幅をなしに指定する */
+    height: 0px;
+    /* ボックスの高さをなしに指定する */
+    width: 0px;
+    /* 境界線を実線で指定する */
+    border: 10px solid;
+    /* 境界線の色を透過に指定する */
+    border-color: transparent;
+    /* 境界線の上部を実線で指定する（可視化） */
+    border-left: 10px solid #212529;
+  }
+
+  /*carts/cart.balde.html*/
+
+  .flex {
+    /*max-width:750px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .flex > .col3 {
+    width: 55%;
+    height: 60%;
+    margin-left: -36px;
+  }
+
+  .imgcart {
+    width: 230px;
+    height: 200px;
+  }
+
+  .flex > .col9 {
+    width: 45%;
+    margin-right: -38px;
+  }
+}
+
