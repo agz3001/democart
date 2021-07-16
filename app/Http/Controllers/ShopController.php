@@ -177,7 +177,7 @@ class ShopController extends Controller
                 ->orWhere("category", "like", "%".$keyword."%")
                 ->orWhere("store", "%".$keyword."%");
         } #queryに集約
-        $shops =$query->paginate(6); #ここで受け取り
+        $shops =$query->paginate(10); #ここで受け取り
         return view('search', compact("keyword", "shops"));
     }
 
