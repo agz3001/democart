@@ -28,6 +28,7 @@
   </header>
 </div>
 <!--drawer.jsによるtoggleバー end-->
+
 <!--PC・タブレット専用の左サイドバー-->
 <div class="row">
   <div class="col-4" id="sidebar">

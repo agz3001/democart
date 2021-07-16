@@ -8,8 +8,11 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Shop;
 use App\Cart;
+use App\Delivery;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Thanks;
+use App\Mail\OrderShip;
+
 class ShopController extends Controller
 {
     /**
@@ -141,8 +144,13 @@ class ShopController extends Controller
 
         $mail_data['checkout_items']=$cart->checkoutCart();
 
+        #購入者への通知メール
         Mail::to($user->email)->send(new Thanks($mail_data));
-        #見守り人(sub_email)へも送信
+        #配達者への通知メール
+        $delivery =Delivery::pluck("email");
+        $delivery->all();
+        Mail::to($delivery)->send(new OrderShip($mail_data));
+        #見守り人(sub_email)への通知メール
         #Mail::to($user->sub_email)->send(new Thanks($mail_data));
         return view('carts.checkout', compact("checkout_items", "checkout_amount", "checkout_fee"));
     }

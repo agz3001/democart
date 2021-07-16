@@ -48,11 +48,11 @@
           </ul>
         </div>
         <div class="row d-flex justify-content-around">
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/select" role="button">商品を探す</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/select" role="button">{{ __('商品を探す') }}</a>
           @guest
-              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('login') }}">会員入口</a>
+              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('login') }}">{{ __('会員入口') }}</a>
               @if (Route::has('register'))
-              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('register') }}">新規登録</a>
+              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('register') }}">{{ __('新規登録') }}</a>
               @endif
           @else
               <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('logout') }}"
@@ -63,11 +63,11 @@
               <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                   @csrf
               </form>
-              <a class="top-menu col-5 col-md-3 btn text-white" href="/history" role="button">注文履歴</a>
+              <a class="top-menu col-5 col-md-3 btn text-white" href="/cart" role="button">{{ __('お買い物かご') }}</a>
           @endguest
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/#today" role="button">今月のおすすめ</a>
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/#howtouse" role="button">使い方</a>
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/#faq" role="button">よくある質問</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/#today" role="button">{{ __('今月のおすすめ') }}</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/#howtouse" role="button">{{ __('使い方') }}</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/#faq" role="button">{{ __('よくある質問') }}</a>
         </div>
       </div>
 
