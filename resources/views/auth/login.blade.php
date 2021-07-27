@@ -25,7 +25,7 @@
       </div>
       <div class="form-group container row mx-auto py-1" style="background-color: #ffd17d;">
           <div class="col-md-4 col-form-label text-md-right">
-              <label for="password">{{ __('パスワード') }}</label>
+              <label for="password">{{ __('暗証番号') }}</label>
           </div>
           <div class="col-md-6">
               <input id="password" type="text" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="">
@@ -34,7 +34,7 @@
                       <strong>{{ $message }}</strong>
                   </span>
               @enderror
-              <p style="color: #634d25;">ご登録頂いた８文字以上のパスワード</p>
+              <p style="color: #634d25;">ご登録頂いた８文字以上の暗証番号</p>
           </div>
       </div>
       <div class="form-group text-center mb-2">

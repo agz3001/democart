@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-  <!--文字形式の指定。無視して結構です-->
   <meta charset="utf-8">
   <!--表領域の設定です。user-scalableは"yes"でズーム可能になります-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
-  <!--検索サイトでの検索結果のタイトルの下の説明文.Googleでは全角80文字程度まで表示-->
+  <!--検索結果で表示される説明文.Googleでは全角80文字程度まで表示-->
   <meta name="description" content="即日配達！最短20分でお届け！忙しくて買い物に行けない。スーパーまで買い物に行くのが大変。そんな方は是非かぼちゃのカートを利用してみてください！">
   <!--OGP設定.SNS上でシェアされると、タイトル/URL/概要/画像を伝えるタグ情報-->
   <meta property="og:title" content="かぼちゃのカート"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://pumpkin-cart2.sakura.ne.jp"/>
+  <meta property="og:url" content="https://pumpkin-cart4.sakura.ne.jp"/>
   <meta property="og:image" content="画像のURL" />
+　<!--iOS版 WebClip. アプリストアを経由しないPWA化-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="かぼちゃのカート">
+  <link rel="apple-touch-icon" href="public/storage/image/pumpkin.webp" sizes="72x72">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!--タイトル-->
