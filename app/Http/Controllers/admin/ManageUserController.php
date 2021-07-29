@@ -26,6 +26,7 @@ class ManageUserController extends Controller
         #$sample_list =Sample::search($keyword);
         #ddd($sample_list);
         $history =Cart::onlyTrashed()->get();
+        
         return view("admin.accepted_orders", compact("history", "keyword"));
     }
 

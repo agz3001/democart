@@ -14,7 +14,7 @@
 
 @foreach ($checkout_items as $item)
 [{{ $loop->iteration }}]<br>
-・画像<br>
+・{{asset($item->shop->image_path)}}<br>
 ・[店舗名]: {{ $item->shop->store }}<br>
 ・[商品名]: {{ $item->shop->name }}<br>
 ・[価格]: {{ $item->shop->fee }} 円<small>(税込8%)</small><br>
@@ -34,6 +34,6 @@
 <br>
 {{ config('app.name') }}<br>
 mail: osaka.cart108@gmail.com<br>
-HP: https://pumpkin-cart4.sakura.ne.jp
+HP: https://pumpkin-cart5.sakura.ne.jp
 
 @endcomponent

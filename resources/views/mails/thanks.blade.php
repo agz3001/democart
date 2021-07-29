@@ -6,7 +6,7 @@
 お客様が購入した商品は<br>
 
 @foreach ($checkout_items as $item)
-{{ $loop->iteration }}.)<br>
+[{{ $loop->iteration }}]<br>
 ・[商品名]: {{ $item->shop->name }}<br>
 ・[価格]: {{ $item->shop->fee }} 円<small>(税込8%)</small><br>
 ・[品数]: {{ $item->amount }} 品<br>
@@ -33,6 +33,6 @@
 <br>
 {{ config('app.name') }}<br>
 mail: osaka.cart108@gmail.com<br>
-HP: https://pumpkin-cart4.sakura.ne.jp
+HP: https://pumpkin-cart5.sakura.ne.jp
 
 @endcomponent

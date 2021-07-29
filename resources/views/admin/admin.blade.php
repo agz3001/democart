@@ -2,33 +2,35 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!--表領域の設定。user-scalableは"yes"でズーム可能になります-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>@yield("title")</title>
-
+    <!--タイトル-->
+    @hasSection("title")
+    <title>@yield("title") | {{config("app.name")}}</title>
+    @else
+    <title>{{config("app.name")}}</title>
+    @endif
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css')}}" rel="stylesheet">
-    <link href="jquery.flip-quote.css" rel="stylesheet"/>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script>
-    <script src="jquery.flip-quote.js"></script>
-    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/admin/login') }}">
                     管理ページ
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -80,11 +82,13 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <footer>
-          <div class="inner" style="padding: 20px 0; text-align:center;">
-            <p class="copyright">Copyright&copy;2021 かぼちゃのカート, All Rights Reserved.</p>
-          </div>
-        </footer>
+
+        <div class="container mb-5">
+          <button class="text-left btn btn-outline-secondary" onclick="window.scrolltop()"><i class="fas fa-arrow-alt-circle-up"></i> トップへ</button>
+        </div>
+        <div class="container-fluid mb-5 py-3">
+          <div class="weak text-center">&copy; {{ date('Y') }} {{ config('app.name') }}</div>
+        </div>
     </div>
 </body>
 </html>

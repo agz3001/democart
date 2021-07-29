@@ -1,4 +1,4 @@
-@extends("layouts.app")
+@extends("admin.admin")
 
 @section("title", "受注記録")
 @section("content")
@@ -37,7 +37,7 @@
         @foreach( $history as $history )
         <tr>
           <td>{{ $history->user_id }}</td>
-          <td>{{ $history->user->name }}</a></td>
+          <td>{{ $history->user->name }}</td>
           <td>{{ $history->user->address }}</td>
           <td>{{ $history->shop->store }}</td>
           <td>{{ $history->shop->name }}</td>

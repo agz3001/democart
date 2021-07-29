@@ -9,7 +9,7 @@
   <!--OGP設定.SNS上でシェアされると、タイトル/URL/概要/画像を伝えるタグ情報-->
   <meta property="og:title" content="かぼちゃのカート"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://pumpkin-cart4.sakura.ne.jp"/>
+  <meta property="og:url" content="https://pumpkin-cart5.sakura.ne.jp"/>
   <meta property="og:image" content="画像のURL" />
   <!--iOS版 WebClip. アプリストアを経由しないPWA化-->
   <meta name="apple-mobile-web-app-capable" content="yes">
