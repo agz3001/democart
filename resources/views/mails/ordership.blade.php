@@ -7,7 +7,7 @@
 <hr>
 <br>
 [ご依頼者氏名]: {{ Auth::user()->name }} 様<br>
-[ご依頼者住所]: {{ Auth::user()->address }}{{ Auth::user()->tenant }}<br>
+[ご依頼者住所]: {{ Auth::user()->address }}<br>
 [ご依頼者TEL]: <br>
 
 ご依頼の商品は<br>

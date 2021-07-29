@@ -28,26 +28,12 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('住所') }}</label>
+                            <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('お届け先住所') }}</label>
 
                             <div class="col-md-7">
-                                <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="off" placeholder="入力例:  大阪府門真市新橋町 ２５ー５">
+                                <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="off" placeholder="例:  大阪府門真市新橋町 ２５ー５ コーポ高野１１５">
 
                                 @error('address')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="tenant" class="col-md-4 col-form-label text-md-right">{{ __('建物名・お部屋番号') }}</label>
-
-                            <div class="col-md-7">
-                                <input id="tenant" type="text" class="form-control @error('tenant') is-invalid @enderror" name="tenant" value="{{ old('tenant') }}" autocomplete="off" placeholder="入力例:  コーポ高野１１５号室">
-
-                                @error('tenant')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>

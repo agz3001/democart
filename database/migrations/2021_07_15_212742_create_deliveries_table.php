@@ -19,7 +19,7 @@ class CreateDeliveriesTable extends Migration
             $table->string("name");
             $table->string("email");
             $table->string("tel");
-            $table->longText("address")->nullable();
+            $table->text("address")->nullable();
             $table->timestamps();
         });
     }
