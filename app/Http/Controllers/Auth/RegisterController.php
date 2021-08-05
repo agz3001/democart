@@ -8,10 +8,8 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Http\Request;//追加
 use Illuminate\Auth\Events\Registered;//追加
-use Illuminate\Support\Facades\Mail;
-use App\Mail\RegisterMail;
+use Illuminate\Http\Request;//追加
 
 class RegisterController extends Controller
 {
@@ -34,12 +32,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    #protected $redirectTo = RouteServiceProvider::HOME;
-    protected function redirectPath()
-    {
-        $path =session()->pull("url.intended");
-        return $path;
-    }
+    protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
      * Create a new controller instance.
@@ -49,9 +42,8 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
-
     }
-
+    
     /**
      * Get a validator for an incoming registration request.
      *
