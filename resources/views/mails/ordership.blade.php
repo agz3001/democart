@@ -14,7 +14,7 @@
 
 @foreach ($checkout_items as $item)
 [{{ $loop->iteration }}]<br>
-・{{asset($item->shop->image_path)}}<br>
+ <img src="{{ asset($item->shop->image_path) }}"><br>
 ・[店舗名]: {{ $item->shop->store }}<br>
 ・[商品名]: {{ $item->shop->name }}<br>
 ・[価格]: {{ $item->shop->fee }} 円<small>(税込8%)</small><br>
