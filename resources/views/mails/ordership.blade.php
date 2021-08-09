@@ -33,7 +33,7 @@
 <hr>
 <br>
 {{ config('app.name') }}<br>
-mail: osaka.cart108@gmail.com<br>
-HP: https://pumpkin-cart5.sakura.ne.jp
+mail: {{ env('MAIL_FROM_ADDRESS') }}<br>
+HP: {{ env('APP_URL') }}
 
 @endcomponent

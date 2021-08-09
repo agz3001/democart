@@ -57,7 +57,7 @@
       </main>
 
       <div class="container mb-5">
-        <button class="text-left btn btn-outline-secondary" onclick="window.scrolltop()"><i class="fas fa-arrow-alt-circle-up"></i> トップへ</button>
+        <button class="text-left btn btn-outline-secondary" onclick="window.scrolltop()"><i class="fas fa-arrow-alt-circle-up"></i> 1番上に戻る</button>
       </div>
 
       <div class="container-fluid mb-5 py-3">
@@ -70,14 +70,32 @@
             <a href="/select"><i class="fas fa-search-minus" style="color: #fff;"></i></a>
             <h2>商品検索</h2>
           </div>
-          <div class="col-3 mx-0">
-            <a href="{{ route('login') }}"><i class="fas fa-user-alt" style="color: #fff;"></i></a>
-            <h2>会員入口</h2>
-          </div>
-          <div class="col-3 mx-0">
-            <a href="{{ route('register') }}"><i class="fas fa-user-edit" style="color: #fff;"></i></a>
-            <h2>新規登録</h2>
-          </div>
+          @guest
+              <div class="col-3 mx-0">
+                <a href="{{ route('login') }}"><i class="fas fa-user-alt" style="color: #fff;"></i></a>
+                <h2>会員入口</h2>
+              </div>
+              @if (Route::has('register'))
+              <div class="col-3 mx-0">
+                <a href="{{ route('register') }}"><i class="fas fa-user-edit" style="color: #fff;"></i></a>
+                <h2>新規登録</h2>
+              </div>
+              @endif
+          @else
+              <div class="col-3 mx-0">
+                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();">
+                              <i class="far fa-window-close" style="color: #fff;"></i></a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                     @csrf
+                </form>
+                <h2>会員出口</h2>
+              </div>
+              <div class="col-3 mx-0">
+                <a href="/cart"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
+                <h2>買物かご</h2>
+              </div>
+          @endguest
           <div class="col-3 mx-0">
             <a href="/#howtouse"><i class="fas fa-book-open" style="color: #fff;"></i></a>
             <h2>使い方</h2>
