@@ -13,7 +13,7 @@
   </div>
 </div>
 <div class="text-center mt-3">
-  <a href="/" class="btn btn-success">ホームに戻る</a>
+  <a href="/" class="btn btn-success">最初のページに戻る</a>
 </div>
 
 @endsection
