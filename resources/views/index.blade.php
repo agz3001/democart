@@ -14,7 +14,7 @@
             <div class="card">
               <a href="{{url('/goods/detail', ['shop'=>$shop])}}"><img class="img-fluid" src="{{ asset($shop->image_path) }}" alt=""></a>
               <div class="card-body">
-                <p class="card-subtitle text-muted h-75" style="font-size:15px;">{{$shop->name}}</p>
+                <p class="card-subtitle h-75" style="font-size:15px;">{{$shop->name}}</p>
                 <p class="card-title price" style="font-size:15px;"><strong style="color:#eb8f34;">¥{{number_format($shop->fee)}}</strong><small>(税込8%)</small></p>
               </div>
             </div>
@@ -90,7 +90,7 @@
         </tr>
         <tr>
           <td class="align-top">A.1</td>
-          <td>既にご登録いただいた電話番号かメールアドレスに間違いがないかご確認ください。なお、機種変更などで当該電話番号およびメールアドレスがご利用できなくなった場合には新しい電話番号かメールアドレスでの再登録をお願いします。</td>
+          <td>既にご登録いただいたメールアドレスに間違いがないかご確認ください。なお、機種変更などで当該メールアドレスがご利用できなくなった場合には新しいメールアドレスでの再登録をお願いします。</td>
         </tr>
         <tr>
           <th>Q.2</th>
@@ -98,7 +98,6 @@
         </tr>
         <tr>
           <td class="align-top">A.2</td>
-          <!--リンクを押すと料金説明のページに遷移します-->
           <td>アプリのダウンロードは無料です。買い物を依頼した際には、買い物の実費とサービス料を請求させていただきます。詳細は<u><a href="/service_charge">こちら</a></u>からご確認ください。</td>
         </tr>
         <tr>
@@ -120,8 +119,8 @@
 
 <div class="container bg-light" style="margin-bottom: 80px;">
   <p class="text-center my-0">お問い合わせ</p>
-  <p class="text-center my-0"><a href="mailto:osaka.cart108@gmail.com"><i class="far fa-envelope"></i> osaka.cart108@gmail.com</a></p>
-  <p class="text-center my-0"><a href="tel:117"><i class="fas fa-phone-volume"></i> 090-xxxx-xxxx</a></p>
+  <p class="text-center my-0"><a href="mailto:osaka.cart108@gmail.com" style="color: #1d3994;"><i class="far fa-envelope"></i> osaka.cart108@gmail.com</a></p>
+  <p class="text-center my-0"><a href="tel:117" style="color: #1d3994;"><i class="fas fa-phone-volume"></i> 090-xxxx-xxxx</a></p>
 </div>
 
 @endsection

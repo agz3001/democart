@@ -25,6 +25,6 @@
 	</div>
 </div>
 <div class="text-center">
-	<a href="javascript:history.back()" class="btn btn-success">戻る</a>
+	<a href="/admin" class="btn btn-success">戻る</a>
 </div>
 @endsection

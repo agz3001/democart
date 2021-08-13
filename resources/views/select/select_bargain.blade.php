@@ -34,7 +34,7 @@
   <div class="col-4" id="sidebar">
     <div class="sidebar_fixed">
       <ul><strong>商品の分類</strong>
-        <li><a href="{{url('/select/bargain')}}">今月のおすすめ</a></li>
+        <li><a href="{{url('/select/bargain')}}" class="font-weight-bold">今月のおすすめ</a></li>
         <li><a href="{{url('/select/category/goods?category=野菜・果物')}}">野菜・果物</a></li>
         <li><a href="{{url('/select/category/goods?category=魚介類・肉・肉加工品・ハム・ソーセージ')}}">魚介類・肉・肉加工品<br>ハム・ソーセージ</a></li>
         <li><a href="{{url('/select/category/goods?category=卵・乳製品・牛乳・豆乳・豆腐・納豆')}}">卵・乳製品・牛乳<br>豆乳・豆腐・納豆</a></li>

@@ -16,6 +16,7 @@ class CreateShopsTable extends Migration
         Schema::create('shops', function (Blueprint $table) {
             $table->increments("id");
             $table->longText("name");
+            $table->integer("weight");
             $table->bigInteger("product_code");
             $table->longText("detail")->nullable();
             $table->integer("fee");

@@ -38,6 +38,8 @@
   <!-- Styles -->
   <!-- drawer.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+  <!-- SweetAlert2のCSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.css">
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
@@ -46,6 +48,11 @@
     <div id="app">
       <div class="container">
         <div id="service-title" class="mb-2 px-0">
+          <div id="size-button" class="text-right">
+            文字サイズ
+            <button class="size-button active" data-font="16">中</button>
+            <button class="size-button" data-font="20">大</button>
+          </div>
           <ul>
             <li><img src="{{ asset('public/storage/image/pumpkin.webp') }}" class="px-0" style="height: 20px;"></li>
             <li><a href="/" style="text-decoration: none; color:#212529;"><h1 id="service-title-text" class="px-0">かぼちゃのカート</h1></a></li>
@@ -107,7 +114,7 @@
               <div class="col-3 mx-0">
                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
                               document.getElementById('logout-form').submit();">
-                              <i class="far fa-window-close" style="color: #fff;"></i></a>
+                              <i class="fas fa-user-lock" style="color: #fff;"></i></a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                      @csrf
                 </form>
@@ -133,6 +140,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!-- SweetAlert2の本体-->
+    <!--<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.js"></script>
+    <!-- IE11やAndroidブラウザ用のjsファイル-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script src="{{asset('js/drawer.js')}}" type="module"></script>
 </body>
 </html>
