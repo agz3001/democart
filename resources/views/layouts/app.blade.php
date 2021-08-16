@@ -48,48 +48,50 @@
     <div id="app">
       <div class="container">
         <div id="service-title" class="mb-2 px-0">
-          <div id="size-button" class="text-right">
+          <div id="size-button" class="text-right modify">
             文字サイズ
-            <button class="size-button active" data-font="16">中</button>
-            <button class="size-button" data-font="20">大</button>
+            <button class="size-button medium">中</button>
+            <button class="size-button large">大</button>
           </div>
+          <br>
+          <br>
           <ul>
             <li><img src="{{ asset('public/storage/image/pumpkin.webp') }}" class="px-0" style="height: 20px;"></li>
             <li><a href="/" style="text-decoration: none; color:#212529;"><h1 id="service-title-text" class="px-0">かぼちゃのカート</h1></a></li>
           </ul>
         </div>
         <div class="row d-flex justify-content-around">
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/select" role="button">{{ __('商品を探す') }}</a>
+          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/select" role="button">商品を探す</a>
           @guest
-              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('login') }}">{{ __('会員入口') }}</a>
+              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="{{ route('login') }}">会員入口</a>
               @if (Route::has('register'))
-              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('register') }}">{{ __('新規登録') }}</a>
+              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="{{ route('register') }}">新規登録</a>
               @endif
           @else
-              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('logout') }}"
+              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="{{ route('logout') }}"
                  onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
-                  {{ __('会員出口') }}
+                  会員出口
               </a>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                   @csrf
               </form>
-              <a class="top-menu col-5 col-md-3 btn text-white" href="/cart" role="button">{{ __('お買い物かご') }}</a>
+              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/cart" role="button">お買い物かご</a>
           @endguest
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/#today" role="button">{{ __('今月のおすすめ') }}</a>
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/#howtouse" role="button">{{ __('使い方') }}</a>
-          <a class="top-menu col-5 col-md-3 btn text-white" href="/#faq" role="button">{{ __('よくある質問') }}</a>
+          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/#today" role="button">今月の<br>おすすめ</a>
+          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/#howtouse" role="button">使い方</a>
+          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/#faq" role="button">よくある<br>質問</a>
         </div>
       </div>
 
-      <main class="py-4">
+      <main class="py-4 modify">
           @yield('content')
       </main>
 
       <div class="container mb-5">
-        <button class="text-left btn btn-outline-secondary" onclick="window.scrolltop()"><i class="fas fa-arrow-alt-circle-up"></i> 1番上に戻る</button>
+        <button class="text-left btn btn-outline-secondary modify" onclick="window.scrolltop()"><i class="fas fa-arrow-alt-circle-up"></i> 1番上に戻る</button>
       </div>
-      <div class="container-fluid mb-5 py-3">
+      <div class="container-fluid mb-5 py-3 modify">
         <div class="weak text-center">&copy; {{ date('Y') }} {{ config('app.name') }}</div>
       </div>
 
@@ -107,7 +109,7 @@
               @if (Route::has('register'))
               <div class="col-3 mx-0">
                 <a href="{{ route('register') }}"><i class="fas fa-user-edit" style="color: #fff;"></i></a>
-                <h2>新規登録</h2>
+                <h2 >新規登録</h2>
               </div>
               @endif
           @else

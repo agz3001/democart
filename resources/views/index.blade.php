@@ -46,22 +46,22 @@
     <div class="col-8 col-md-3 mb-5">
       <img src="{{ asset('public/storage/image/step_search.png') }}" alt="" class="square">
       <div><u>手順 1</u></div>
-      <div>アプリをダウンロード</div>
+      <p>アプリをダウンロード</p>
     </div>
     <div class="col-8 col-md-3 mb-5">
       <img src="{{ asset('public/storage/image/step_push.png') }}" alt="" class="square">
       <div><u>手順 2</u></div>
-      <div>商品を選ぶ</div>
+      <p>商品を選ぶ</p>
     </div>
     <div class="col-8 col-md-3 mb-5">
       <img src="{{ asset('public/storage/image/step_login.png') }}" alt="" class="square">
       <div><u>手順 3</u></div>
-      <div>会員登録/会員様入口より入る</div>
+      <p>会員登録 / 会員入口より<br>入る</p>
     </div>
     <div class="col-8 col-md-3 mb-5">
       <img src="{{ asset('public/storage/image/step_cash.png') }}" alt="" class="square">
       <div><u>手順 4</u></div>
-      <div>商品を確認して「レジに進む」を選択する</div>
+      <p>商品を確認して<br>「お会計へ」を選択する</p>
     </div>
 
     <div class="container mt-5 text-center">
@@ -85,34 +85,34 @@
     <div class="mb-2">
       <table>
         <tr>
-          <th>Q.1</th>
-          <th>ログインができません。</th>
+          <th>問１</th>
+          <th class="text-center">会員入口から入れません。</th>
         </tr>
         <tr>
-          <td class="align-top">A.1</td>
+          <td class="align-top">答１</td>
           <td>既にご登録いただいたメールアドレスに間違いがないかご確認ください。なお、機種変更などで当該メールアドレスがご利用できなくなった場合には新しいメールアドレスでの再登録をお願いします。</td>
         </tr>
         <tr>
-          <th>Q.2</th>
-          <th>料金について教えてください。</th>
+          <th>問２</th>
+          <th class="text-center">料金について<br>教えてください。</th>
         </tr>
         <tr>
-          <td class="align-top">A.2</td>
+          <td class="align-top">答２</td>
           <td>アプリのダウンロードは無料です。買い物を依頼した際には、買い物の実費とサービス料を請求させていただきます。詳細は<u><a href="/service_charge">こちら</a></u>からご確認ください。</td>
         </tr>
         <tr>
-          <th>Q.3</th>
-          <th>支払方法について教えてください。</th>
+          <th>問３</th>
+          <th class="text-center">支払方法について<br>教えてください。</th>
         </tr>
         <tr>
-          <td class="align-top">A.3</td>
+          <td class="align-top">答３</td>
           <td>PayPayでのご決済になります。お支払いは一括払いのみのお取り扱いとなります。ご利用の際は<u><a href="https://paypay.ne.jp/help/c0031/" rel="noreferrer noopener" target="_blank">こちら</a></u>をご参照ください。</td>
         </tr>
       </table>
     </div>
 
     <div class="text-center mb-3">
-      <a href="/question" class="btn btn-warning">もっと見る</a>
+      <a href="/question" class="btn btn-warning modify">もっと見る</a>
     </div>
   </div>
 </div>

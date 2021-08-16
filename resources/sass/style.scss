@@ -32,6 +32,30 @@ h2{
   margin-left: 5px;
   margin-right: 5px;
 }
+/*フォントサイズ調整ボタン*/
+#size-button {
+  position:fixed;
+  top:5px;
+  right:5px;
+  z-index:3;
+}
+.size-button {
+  background-color: #fff;
+  border: 1px solid #999;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 11px;
+  text-align: center;
+  width: 40px;
+  &:hover,
+  &.active {
+    background-color: #AE2823;
+    color: #fff;
+  }
+}
+
 /* index */
 /* carousel slider */
 #carousel-card .carousel-control-next,

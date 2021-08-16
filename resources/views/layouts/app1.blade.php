@@ -48,10 +48,10 @@
     <div id="app">
       <div class="container">
         <div id="service-title" class="mb-2 px-0">
-          <div id="size-button" class="text-right">
+          <div id="size-button" class="text-right modify">
             文字サイズ
-            <button class="size-button active" data-font="16">中</button>
-            <button class="size-button" data-font="20">大</button>
+            <button class="size-button medium" data-font="16">中</button>
+            <button class="size-button large" data-font="20">大</button>
           </div>
           <ul>
             <li><img src="{{ asset('public/storage/image/pumpkin.webp') }}" class="px-0" style="height: 20px;"></li>
@@ -59,15 +59,15 @@
           </ul>
         </div>
       </div>
-      <main class="py-4">
+      <main class="py-4 modify">
           @yield('content')
       </main>
 
       <div class="container mb-5">
-        <button class="text-left btn btn-outline-secondary" onclick="window.scrolltop()"><i class="fas fa-arrow-alt-circle-up"></i> 1番上に戻る</button>
+        <button class="text-left btn btn-outline-secondary modify" onclick="window.scrolltop()"><i class="fas fa-arrow-alt-circle-up"></i> 1番上に戻る</button>
       </div>
 
-      <div class="container-fluid mb-5 py-3">
+      <div class="container-fluid mb-5 py-3 modify">
         <div class="weak text-center">&copy; {{ date('Y') }} {{ config('app.name') }}</div>
       </div>
 
@@ -120,7 +120,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
     <!-- SweetAlert2の本体-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.js"></script>
-    <!-- IE11やAndroidブラウザ用のjsファイル-->
+    <!-- IE11やAndroidブラウザ用のSweetAlertjsファイル-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script src="{{asset('js/drawer.js')}}"></script>
 </body>

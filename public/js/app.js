@@ -37401,16 +37401,22 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-/*ページトップへのスクロール*/
+/* 文字サーズ変更ボタン */
+$(document).ready(function () {
+  $(".medium").click(function () {
+    $(".modify").removeClass("font-weight-bold");
+    $(".modify-btn").css("font-size", "0.9rem");
+  });
+  $(".large").click(function () {
+    $(".modify").addClass("font-weight-bold");
+    $(".modify-btn").css("font-size", "1.15rem");
+  });
+});
+/*ページトップへのスクロール;グローバル変数扱い*/
+
 window.scrolltop = function () {
   scrollTo(0, 0);
 };
-/*
-function scrollToTop(){
-  scrollTo(0,0);
-}
-*/
-
 /* select/select_bargain.blade.html, Tooltips */
 
 
