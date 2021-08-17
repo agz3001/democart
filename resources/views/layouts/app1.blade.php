@@ -50,8 +50,8 @@
         <div id="service-title" class="mb-2 px-0">
           <div id="size-button" class="text-right modify">
             文字サイズ
-            <button class="size-button medium" data-font="16">中</button>
-            <button class="size-button large" data-font="20">大</button>
+            <button class="size-button medium">中</button>
+            <button class="size-button large">大</button>
           </div>
           <ul>
             <li><img src="{{ asset('public/storage/image/pumpkin.webp') }}" class="px-0" style="height: 20px;"></li>

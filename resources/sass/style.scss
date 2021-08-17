@@ -127,6 +127,18 @@ ul {
 .form_input_number {
   width: 50px;
 }
+/* service_charge.blade.php */
+.service_charge {
+  /*各料金名に蛍光ペンでマークした感じ*/
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+.charge_system table th{
+  padding: 3px 4px;
+}
+.charge_system table td{
+  padding: 3px 4px;
+  text-align:center;
+}
 
 /*PC用のcss*/
 @media screen and (min-width: 767px) {

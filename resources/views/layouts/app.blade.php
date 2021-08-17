@@ -51,7 +51,7 @@
           <div id="size-button" class="text-right modify">
             文字サイズ
             <button class="size-button medium">中</button>
-            <button class="size-button large">大</button>
+            <button class="size-button large"><b>大</b></button>
           </div>
           <br>
           <br>

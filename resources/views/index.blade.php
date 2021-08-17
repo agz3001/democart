@@ -61,7 +61,7 @@
     <div class="col-8 col-md-3 mb-5">
       <img src="{{ asset('public/storage/image/step_cash.png') }}" alt="" class="square">
       <div><u>手順 4</u></div>
-      <p>商品を確認して<br>「お会計へ」を選択する</p>
+      <p>商品を確認し<br>「お会計へ」を選択する</p>
     </div>
 
     <div class="container mt-5 text-center">

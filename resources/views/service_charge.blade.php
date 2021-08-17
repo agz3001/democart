@@ -3,19 +3,55 @@
 @section("title", "ご利用料金のご案内")
 @section("content")
 <div class="container">
-  <h1 style="text-align:center;">料金について</h1>
-  <h3 style="text-align:center;">「(仮)買い物代行サービス」アプリのダウンロードは無料です。買い物や受取りの依頼をする際に料金がかかります。利用料金の支払いは現金の一括払いとなります。</h3>
+  <div>
+    <div class="text-center"><u>料金について</u></div>
+    <p class="text-center">お買い物や受取りのご依頼をする際に料金がかかるシステムです。具体的には、<b class="service_charge">ご購入料金</b>、<b class="service_charge">ご利用料金(代行手数料)</b>、<b class="service_charge">レジ袋料金</b>、<b class="service_charge">従量料金</b>を合算した金額を請求致します。</p>
+  </div>
+  <br>
+  <div class="charge_system">
+    <div class="text-center"><u>料金システム表</u></div>
+    <table border=1>
+      <tr>
+        <th class="text-center">料金名</th>
+        <th class="text-center">詳細</th>
+      </tr>
+      <tr>
+        <td>ご購入<br>料金</td>
+        <td>お買い上げ頂いた品の<br>税込み総額です。</td>
+      </tr>
+      <tr>
+        <td>ご利用料金<sup><a href="/service_charge#charge_1">1</a></sup></td>
+        <td>・ご購入料金が3,000円未満の場合：500円<br>
+          ・ご購入料金が3,000円以上の場合：400円<br>
+        </td>
+      </tr>
+      <tr>
+        <td>レジ袋<br>料金</td>
+        <td>ご購入量に関わらず、定額 <b>¥10</b> を頂いております。</td>
+      </tr>
+      <tr>
+        <td>従量<br>料金</td>
+        <td>総量 <b>20kg</b> 以上は<br>ご購入できません。<sup><a href="/service_charge#charge_2">2</a></sup></td>
+      </tr>
+    </table>
+    <div>
+      <sup id="charge_1">1.  最低1,000円以上からの購入になります。</sup>
+    </div>
+    <div>
+      <sup id="charge_2">2. 【重さ制限について】最初の購入：1カゴ/5キロ
+      ・カゴ追加：500円・１カゴ追加毎（※最大4かごまで）</sup>
+    </div>
+  </div>
+  <br>
+  <div>
+    <div class="text-center"><u>ご利用するメリット</u></div>
+    <p class="text-center">弊サービスをご利用頂ければ、ご移動やお買い物にお時間はかからないため、お客様のお時間をさらに有効に活用して頂くことが期待できます。</p>
+  </div>
+
 </div>
-<br>
-<div class="container">
-  <h1 style="text-align:center;">料金システム</h1>
-  <h3 style="text-align:center;">各サービスの利用料金は次のようになります。</h3>
+
+<div class="text-center">
+  <a href="/" class="btn btn-success modify">最初のページに戻る</a>
 </div>
-<br>
-<div class="container">
-  <h1 style="text-align:center;">ご利用するメリット</h1>
-  <h3 style="text-align:center;">自分自身で買い物や受取りをした場合と「(仮)買い物代行サービス」を利用した場合で比較してみました。
-「(仮)買い物代行サービス」で依頼すれば、移動や買い物の時間もかからず、自分の時間を有効に活用し好きなように過ごすことができます。</h3>
-</div>
-<div style="text-align:center;"><a href="/" class="btn btn-success">戻る</a></div>
+
 @endsection
