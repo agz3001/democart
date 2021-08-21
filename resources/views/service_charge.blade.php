@@ -8,7 +8,7 @@
     <p class="text-center">お買い物や受取りのご依頼をする際に料金がかかるシステムです。具体的には、<b class="service_charge">ご購入料金</b>、<b class="service_charge">ご利用料金(代行手数料)</b>、<b class="service_charge">レジ袋料金</b>、<b class="service_charge">従量料金</b>を合算した金額を請求致します。</p>
   </div>
   <br>
-  <div class="charge_system">
+  <div class="py-3 charge_system">
     <div class="text-center"><u>料金システム表</u></div>
     <table border=1>
       <tr>
@@ -31,7 +31,7 @@
       </tr>
       <tr>
         <td>従量<br>料金</td>
-        <td>総量 <b>20kg</b> 以上は<br>ご購入できません。<sup><a href="/service_charge#charge_2">2</a></sup></td>
+        <td>総積載量 <b>20kg</b> 以上は<br>ご購入できません。<sup><a href="/service_charge#charge_2">2</a></sup></td>
       </tr>
     </table>
     <div>
@@ -43,7 +43,7 @@
     </div>
   </div>
   <br>
-  <div>
+  <div classs="py-3">
     <div class="text-center"><u>ご利用するメリット</u></div>
     <p class="text-center">弊サービスをご利用頂ければ、ご移動やお買い物にお時間はかからないため、お客様のお時間をさらに有効に活用して頂くことが期待できます。</p>
   </div>

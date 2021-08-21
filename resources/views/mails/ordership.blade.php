@@ -26,7 +26,7 @@
 
 <div>
   総量 :  {{ $checkout_amount }} 品
-  <p style="font-size:1.2em; font-weight:bold;">合計金額 : {{ $checkout_fee }} 円</p>
+  <p style="font-size:1.2em; font-weight:bold;">小計金額 : {{ $checkout_fee }} 円</p>
 </div>
 
 <br>

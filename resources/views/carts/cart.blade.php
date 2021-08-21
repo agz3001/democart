@@ -25,7 +25,7 @@
               @csrf
               <input type="hidden" name="user_id" value="{{Auth::user()->id}}">
               <input type="hidden" name="shop_id" value="{{$my_cart->shop->id}}">
-              <button type="submit" class="btn btn-danger cart_btn" data-toggle="tooltip" data-placement="bottom" data-html="true" title="この商品を<br> 削除する"><i class="fas fa-backspace"></i> 削除</button>
+              <button type="submit" class="btn btn-danger cart_btn modify" data-toggle="tooltip" data-placement="bottom" data-html="true" title="この商品を<br> 削除する"><i class="fas fa-backspace"></i> 削除</button>
             </form>
           </div>
         </div>
@@ -34,9 +34,39 @@
       <hr>
       <br>
       @endforeach
-      <div class="text-center p-2">
-        総量 : {{$join_table_sum_amount}} 品
-        <p style="font-size:1.2em; font-weight:bold;">合計金額 : {{number_format($join_table_sum)}} 円</p>
+      <div>
+        <table class="table table-hover table-sm table-borderless text-right">
+          <tr>
+            <td>総積載量</td>
+            <td>{{$weight_amount}} kg</td>
+          </tr>
+          <tr>
+            <td>小計</td>
+            <td>¥ {{number_format($join_table_sum)}}</td>
+          </tr>
+          <tr>
+            <td>サービス手数料</td>
+            <td>¥ {{$service_charge}}</td>
+          </tr>
+          <tr>
+            <td>レジ袋</td>
+            <td>¥ {{$shopping_bag}}</td>
+          </tr>
+          <tr>
+            <td>積載料金</td>
+            <td>¥ {{$total_weight_charge}}</td>
+          </tr>
+          <tr style="border-top: 1px dashed black;">
+            <td style="font-size:1.2em; font-weight:bold;">合計</td>
+            <td style="font-size:1.2em; font-weight:bold;">
+              ¥ {{ number_format($total_charge) }}
+            </td>
+          </tr>
+          <tr>
+            <td>総量</td>
+            <td>{{$join_table_sum_amount}} 品</td>
+          </tr>
+        </table>
       </div>
       <a href="/select" class="btn btn-success">
         <i class="fas fa-reply"> 他にも探す</i>
@@ -75,7 +105,7 @@
     <br>
     <br>
     <div class="text-center mt-5">
-      <a href="/select" class="btn btn-success">商品検索画面へ</a>
+      <a href="/select" class="btn btn-success modify">商品検索画面へ</a>
     </div>
     @endif
   </div>

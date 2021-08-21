@@ -53,6 +53,8 @@
             <button class="size-button medium">中</button>
             <button class="size-button large">大</button>
           </div>
+          <br>
+          <br>
           <ul>
             <li><img src="{{ asset('public/storage/image/pumpkin.webp') }}" class="px-0" style="height: 20px;"></li>
             <li><a href="/" style="text-decoration: none; color:#212529;"><h1 id="service-title-text" class="px-0">かぼちゃのカート</h1></a></li>
@@ -75,17 +77,17 @@
         <div class="row d-flex justify-content-between mx-0 px-0">
           <div class="col-3 mx-0">
             <a href="/select"><i class="fas fa-search-minus" style="color: #fff;"></i></a>
-            <h2>商品検索</h2>
+            <h2 class="foot modify">商品検索</h2>
           </div>
           @guest
               <div class="col-3 mx-0">
                 <a href="{{ route('login') }}"><i class="fas fa-user-alt" style="color: #fff;"></i></a>
-                <h2>会員入口</h2>
+                <h2 class="foot modify">会員入口</h2>
               </div>
               @if (Route::has('register'))
               <div class="col-3 mx-0">
                 <a href="{{ route('register') }}"><i class="fas fa-user-edit" style="color: #fff;"></i></a>
-                <h2>新規登録</h2>
+                <h2 class="foot modify">新規登録</h2>
               </div>
               @endif
           @else
@@ -96,16 +98,16 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                      @csrf
                 </form>
-                <h2>会員出口</h2>
+                <h2 class="foot modify">会員出口</h2>
               </div>
               <div class="col-3 mx-0">
                 <a href="/cart"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                <h2>買物かご</h2>
+                <h2 class="foot modify">買物かご</h2>
               </div>
           @endguest
           <div class="col-3 mx-0">
             <a href="/#howtouse"><i class="fas fa-book-open" style="color: #fff;"></i></a>
-            <h2>使い方</h2>
+            <h2 class="foot modify">使い方</h2>
           </div>
         </div>
       </footer>

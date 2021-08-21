@@ -17,18 +17,20 @@
           <input type="hidden" name="shop_id" value="{{$shop->id}}">
           <label>数量:</label>
           <input type="number" name="amount" min="1" class="form_input_number" required>
-          <button type="submit" class="btn btn-primary cart_btn" data-toggle="tooltip" data-placement="bottom" data-html="true" title="お買い物<br>かごに入れる"><i class="fas fa-shopping-cart"></i> カートへ</button>
+          <button type="submit" class="btn btn-primary cart_btn modify" data-toggle="tooltip" data-placement="bottom" data-html="true" title="お買い物<br>かごに入れる"><i class="fas fa-shopping-cart"></i> カートへ</button>
         </form>
       </div>
     </div>
     <section class="mt-5" style="border:grey solid 2px; line-height:160%;">
-      <p>・写真はイメージです。</p>
-      ・{{$shop->detail}}
+      <ul style="list-style-type: square;">
+        <li>写真はイメージです。</li>
+        <li>{{$shop->detail}}</li>
+      </ul>
     </section>
   </div>
 </div>
 
 <div class="text-center mt-5">
-  <a href="javascript:history.back()" class="btn btn-success">戻る</a>
+  <a href="javascript:history.back()" class="btn btn-success modify">戻る</a>
 </div>
 @endsection

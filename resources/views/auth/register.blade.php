@@ -151,7 +151,7 @@ Eメールアドレス：
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4 text-center">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary modify">
                                     {{ __('新規登録') }}
                                 </button>
                             </div>

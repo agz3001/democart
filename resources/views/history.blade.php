@@ -13,7 +13,7 @@
     </select>
     @if($history->isNotEmpty())
       @foreach($history as $history)
-      <div class="container">
+      <div class="container py-3">
         <p class="text-center">{{$history->shop->name}}</p>
         <div class="flex">
           <div class="col3">
@@ -23,7 +23,7 @@
             <p class="text-center">¥{{number_format($history->shop->fee)}}<small>(税込8%)</small></p>
             <p class="text-center">{{$history->amount}} 品</p>
             <p class="text-center">購入日: {{$history->deleted_at->format("Y/m/d H:i")}}</p>
-            <a href="{{url('/goods/detail/'.$history->shop->id)}}" class="btn btn-primary">再度購入</a>
+            <a href="{{url('/goods/detail/'.$history->shop->id)}}" class="btn btn-primary modify">再度購入</a>
             </form>
           </div>
         </div>
@@ -40,6 +40,6 @@
   </div>
 </div>
 <div class="text-center mt-5">
-  <a href="javascript:history.back()" class="btn btn-success">戻る</a>
+  <a href="javascript:history.back()" class="btn btn-success modify">商品検索に戻る</a>
 </div>
 @endsection

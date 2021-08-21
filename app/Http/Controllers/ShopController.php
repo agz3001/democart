@@ -74,10 +74,39 @@ class ShopController extends Controller
         $user_id =Auth::id();
         $my_cart =Cart::with("shop")->where("user_id", $user_id)->get();
 
+        $service_charge;
+        $total_weight_charge;
+
         $join_table_sum =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum(DB::raw("fee * amount"));
         $join_table_sum_amount =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum("amount");
 
-        return view("carts.cart", compact("my_cart", "join_table_sum", "join_table_sum_amount"));
+        $weight_amount =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum(DB::raw("weight * amount"));
+        $weight_amount *=0.001;
+        //レジ袋
+        $shopping_bag =10;
+        //サービス料金
+        if($join_table_sum <3000){
+          $service_charge =500;
+        } else {
+          $service_charge =400;
+        }
+        //積載料金
+        if($weight_amount <5){
+          $total_weight_charge =500;
+        } elseif (5 <=$weight_amount && $weight_amount <10){
+          $total_weight_charge =1000;
+        } elseif (10 <=$weight_amount && $weight_amount <15){
+          $total_weight_charge =1500;
+        } elseif (15 <=$weight_amount && $weight_amount <20) {
+          $total_weight_charge =2000;
+        } else {
+          return false;
+        }
+
+        $total_charge =$join_table_sum + $service_charge +$shopping_bag +$total_weight_charge;
+
+        return view("carts.cart", compact("my_cart", "join_table_sum", "join_table_sum_amount", "weight_amount", "shopping_bag", "total_weight_charge",
+      "service_charge", "total_charge"));
     }
 
     /**
@@ -114,6 +143,9 @@ class ShopController extends Controller
         $user_id =Auth::id();
         $shop_id =$request->shop_id;
         #$amount =$request->amount;
+        $service_charge;
+        $total_weight_charge;
+
         $deletes =Cart::with("shop")->where("shop_id", $shop_id)->forceDelete();//完全削除
 
         if ($deletes >0){
@@ -126,21 +158,80 @@ class ShopController extends Controller
         $join_table_sum =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum(DB::raw("fee * amount"));
         $join_table_sum_amount =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum("amount");
 
-        return view("carts.cart", compact("message", "my_cart", "join_table_sum", "join_table_sum_amount"));
+        $weight_amount =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum(DB::raw("weight * amount"));
+        $weight_amount *=0.001;
+        //レジ袋
+        $shopping_bag =10;
+        //サービス料金
+        if($join_table_sum <3000){
+          $service_charge =500;
+        } else {
+          $service_charge =400;
+        }
+        //積載料金
+        if($weight_amount <5){
+          $total_weight_charge =500;
+        } elseif (5 <=$weight_amount && $weight_amount <10){
+          $total_weight_charge =1000;
+        } elseif (10 <=$weight_amount && $weight_amount <15){
+          $total_weight_charge =1500;
+        } elseif (15 <=$weight_amount && $weight_amount <20) {
+          $total_weight_charge =2000;
+        } else {
+          return false;
+        }
+
+        $total_charge =$join_table_sum + $service_charge +$shopping_bag +$total_weight_charge;
+
+        return view("carts.cart", compact("message", "my_cart", "join_table_sum", "join_table_sum_amount", "weight_amount", "shopping_bag", "total_weight_charge",
+      "service_charge", "total_charge"));
     }
 
     public function checkout(Request $request, Cart $cart)
     {
         $user =Auth::user();
         $user_id =Auth::id();
+        $service_charge;
+        $total_weight_charge;
 
         $checkout_items =Cart::with("shop")->where("user_id", $user_id)->get();
         $checkout_amount =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum("amount");
         $checkout_fee =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum(DB::raw("fee * amount"));
 
+        $weight_amount =Cart::with("shop")->where("user_id", $user_id)->select()->join("shops", "shops.id", "=", "carts.shop_id")->sum(DB::raw("weight * amount"));
+        $weight_amount *=0.001;
+        //レジ袋
+        $shopping_bag =10;
+        //サービス料金
+        if($checkout_fee <3000){
+          $service_charge =500;
+        } else {
+          $service_charge =400;
+        }
+        //積載料金
+        if($weight_amount <5){
+          $total_weight_charge =500;
+        } elseif (5 <=$weight_amount && $weight_amount <10){
+          $total_weight_charge =1000;
+        } elseif (10 <=$weight_amount && $weight_amount <15){
+          $total_weight_charge =1500;
+        } elseif (15 <=$weight_amount && $weight_amount <20) {
+          $total_weight_charge =2000;
+        } else {
+          return false;
+        }
+
+        $total_charge =$checkout_fee + $service_charge +$shopping_bag +$total_weight_charge;
+
         $mail_data['user']=$user->name;
         $mail_data["checkout_amount"]=$cart->checkoutCountingAmount();
         $mail_data["checkout_fee"] =$cart->checkoutCountingFee();
+
+        $mail_data["weight_amount"]=$cart->checkoutWeightAmount();
+        $mail_data["service_charge"]=$cart->checkoutServiceCharge();
+        $mail_data["total_weight_charge"]=$cart->checkoutTotalWeightCharge();
+        $mail_data["shopping_bag"]=$cart->checkoutShoppingBag();
+        $mail_data["total_charge"]=$cart->checkoutTotalCharge();
 
         $mail_data['checkout_items']=$cart->checkoutCart();
 
@@ -152,7 +243,8 @@ class ShopController extends Controller
         Mail::to($delivery)->send(new OrderShip($mail_data));
         #見守り人(sub_email)への通知メール
         #Mail::to($user->sub_email)->send(new Thanks($mail_data));
-        return view('carts.checkout', compact("checkout_items", "checkout_amount", "checkout_fee"));
+        return view('carts.checkout', compact("checkout_items", "checkout_amount", "checkout_fee", "weight_amount", "shopping_bag", "total_weight_charge",
+      "service_charge", "total_charge"));
     }
 
     public function orderhistory(Request $request, Cart $cart)

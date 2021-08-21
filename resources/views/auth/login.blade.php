@@ -38,7 +38,7 @@
           </div>
       </div>
       <div class="form-group text-center mb-2">
-          <button type="submit" class="btn btn-primary">買物を始める</button>
+          <button type="submit" class="btn btn-primary modify">買物を始める</button>
       </div>
     </form>
   </div>

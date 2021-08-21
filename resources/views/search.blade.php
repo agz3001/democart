@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="col-3">
-        <button id="s" type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+        <button id="s" type="submit" class="btn btn-primary modify"><i class="fas fa-search"></i></button>
       </div>
     </div>
   </form>
@@ -38,7 +38,7 @@
     @endforeach
   </div>
   <!--paginateメソッドでURLに反映-->
-  <div class="d-flex justify-content-center mt-5">
+  <div class="d-flex justify-content-center mt-5" style="position:relative; z-index:0;">
     {{$shops->appends(["keyword"=>$keyword])->links()}}
   </div>
 </div>
@@ -48,7 +48,7 @@
 </div>
 @endif
 <div class="text-center mt-5">
-  <a href="{{url('/select')}}" class="btn btn-success">商品検索に戻る</a>
+  <a href="{{url('/select')}}" class="btn btn-success modify">商品検索に戻る</a>
 </div>
 </div>
 @endsection
