@@ -37401,34 +37401,35 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-var cookie = $.cookie("font_size");
-
-if (cookie) {
-  cookie;
-} else {
-  $(document).ready(function () {
-    $(".medium").click(function () {
-      $(".modify").removeClass("font-weight-bold");
-      $(".modify-btn").css("font-size", "0.9rem");
-      $.cookie("font_size", "medium", {
-        expires: 7,
-        path: "/",
-        secure: true
-      });
-    });
-    $(".large").click(function () {
-      $(".modify").addClass("font-weight-bold");
-      $(".modify-btn").css("font-size", "2.15rem");
-      $.cookie("font_size", "large", {
-        expires: 7,
-        path: "/",
-        secure: true
-      });
-    });
-  });
-}
 /* 文字サーズ変更ボタン */
+$(document).ready(function () {
+  fontSize();
+  $(".medium").click(function () {
+    $(".modify").removeClass("font-weight-bold");
+    $(".modify-btn").css("font-size", "0.9rem");
+  });
+  $(".large").click(function () {
+    $(".modify").addClass("font-weight-bold");
+    $(".modify-btn").css("font-size", "2.15rem");
+  });
 
+  function fontSize($fsize) {
+    if ($fsize == undefined) {
+      var $fsize = $.cookie('fsize');
+
+      if ($fsize == undefined) {
+        var $fsize = $(".medium").click();
+      }
+    }
+
+    $.cookie("fsize", $fsize, {
+      expires: 7,
+      path: "/"
+    });
+    $(".modify").toggleClass("font-weight-bold");
+    $(".modify-btn").css("font-size", $fsize);
+  }
+});
 /*
 $(document).ready(function(){
   $(".medium").click(function(){
@@ -37443,7 +37444,6 @@ $(document).ready(function(){
 */
 
 /*ページトップへのスクロール;グローバル変数扱い*/
-
 
 window.scrolltop = function () {
   scrollTo(0, 0);
