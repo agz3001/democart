@@ -37414,34 +37414,28 @@ $(document).ready(function () {
 
   function medium($fsize) {
     if ($fsize == undefined) {
-      var $fsize = sessionStorage.getItem('fsize');
+      var $fsize = window.sessionStorage.getItem('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "0.9rem";
       }
     }
 
-    sessionStorage.setItem("fsize", $fsize, {
-      expires: 7,
-      path: "/"
-    });
+    window.sessionStorage.setItem("fsize", $fsize);
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
 
   function large($fsize) {
     if ($fsize == undefined) {
-      var $fsize = sessionStorage.getItem('fsize');
+      var $fsize = window.sessionStorage.getItem('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "2.15rem";
       }
     }
 
-    sessionStorage.setItem("fsize", $fsize, {
-      expires: 7,
-      path: "/"
-    });
+    window.sessionStorage.setItem("fsize", $fsize);
     $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
