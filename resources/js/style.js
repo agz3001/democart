@@ -1,23 +1,33 @@
 /* 文字サーズ変更ボタン */
 $(document).ready(function(){
-  fontSize();
+  medium();
+  large();
   $(".medium").click(function(){
-    $(".modify").removeClass("font-weight-bold");
-    $(".modify-btn").css("font-size", "0.9rem");
+    medium("0.9rem");
   });
   $(".large").click(function(){
-    $(".modify").addClass("font-weight-bold");
-    $(".modify-btn").css("font-size", "2.15rem");
+    large("2.15rem");
   });
-  function fontSize($fsize){
+  function medium($fsize){
     if($fsize ==undefined){
       var $fsize = $.cookie( 'fsize' );
       if($fsize ==undefined){
-        var $fsize =$(".medium").click();
+        var $fsize ="0.9rem";
       }
     }
     $.cookie("fsize", $fsize, {expires:7, path:"/"});
-    $(".modify").toggleClass("font-weight-bold");
+    $(".modify").removeClass("font-weight-bold");
+    $(".modify-btn").css("font-size", $fsize);
+  }
+  function large($fsize){
+    if($fsize ==undefined){
+      var $fsize = $.cookie( 'fsize' );
+      if($fsize ==undefined){
+        var $fsize ="2.15rem";
+      }
+    }
+    $.cookie("fsize", $fsize, {expires:7, path:"/"});
+    $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
 });

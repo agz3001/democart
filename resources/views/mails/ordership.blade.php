@@ -29,11 +29,11 @@
   <p style="font-size:1.2em; font-weight:bold;">小計金額 : {{ $checkout_fee }} 円</p>
 </div>
 
-<br>
-<hr>
-<br>
-{{ config('app.name') }}<br>
-mail: {{ env('MAIL_FROM_ADDRESS') }}<br>
-HP: {{ env('APP_URL') }}
+@component('mail::subcopy')
+    {{ config('app.name') }}<br>
+    Mail: {{ env('MAIL_FROM_ADDRESS') }}<br>
+    TEL: 090-xxxx-####<br>
+    HP: {{ env('APP_URL') }}
+@endcomponent
 
 @endcomponent
