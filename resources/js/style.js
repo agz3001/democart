@@ -8,7 +8,7 @@ $(document).ready(function(){
   $(".large").click(function(){
     large("2.15rem");
   });
-  function medium($fsize){
+  window.onload =function medium($fsize){
     if($fsize ==undefined){
       var $fsize = window.sessionStorage.getItem( 'fsize' );
       if($fsize ==undefined){
@@ -19,7 +19,7 @@ $(document).ready(function(){
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
-  function large($fsize){
+  window.onload =function large($fsize){
     if($fsize ==undefined){
       var $fsize = window.sessionStorage.getItem( 'fsize' );
       if($fsize ==undefined){

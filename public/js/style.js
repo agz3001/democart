@@ -104,7 +104,7 @@ $(document).ready(function () {
     large("2.15rem");
   });
 
-  function medium($fsize) {
+  window.onload = function medium($fsize) {
     if ($fsize == undefined) {
       var $fsize = window.sessionStorage.getItem('fsize');
 
@@ -116,9 +116,9 @@ $(document).ready(function () {
     window.sessionStorage.setItem("fsize", $fsize);
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
-  }
+  };
 
-  function large($fsize) {
+  window.onload = function large($fsize) {
     if ($fsize == undefined) {
       var $fsize = window.sessionStorage.getItem('fsize');
 
@@ -130,7 +130,7 @@ $(document).ready(function () {
     window.sessionStorage.setItem("fsize", $fsize);
     $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
-  }
+  };
 });
 /*
 $(document).ready(function(){
