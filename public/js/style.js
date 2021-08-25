@@ -106,14 +106,14 @@ $(document).ready(function () {
 
   function medium($fsize) {
     if ($fsize == undefined) {
-      var $fsize = $.cookie('fsize');
+      var $fsize = sessionStorage.getItem('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "0.9rem";
       }
     }
 
-    $.cookie("fsize", $fsize, {
+    sessionStorage.setItem("fsize", $fsize, {
       expires: 7,
       path: "/"
     });
@@ -123,14 +123,14 @@ $(document).ready(function () {
 
   function large($fsize) {
     if ($fsize == undefined) {
-      var $fsize = $.cookie('fsize');
+      var $fsize = sessionStorage.getItem('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "2.15rem";
       }
     }
 
-    $.cookie("fsize", $fsize, {
+    sessionStorage.setItem("fsize", $fsize, {
       expires: 7,
       path: "/"
     });
