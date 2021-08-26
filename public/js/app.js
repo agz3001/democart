@@ -37414,14 +37414,14 @@ $(document).ready(function () {
 
   function medium($fsize) {
     if ($fsize == undefined) {
-      var $fsize = window.Cookies.get('fsize');
+      var $fsize = Cookies.get('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "0.9rem";
       }
     }
 
-    window.Cookies.set("fsize", $fsize, {
+    Cookies.set("fsize", $fsize, {
       expires: 7,
       path: "/",
       secure: true
@@ -37432,14 +37432,14 @@ $(document).ready(function () {
 
   function large($fsize) {
     if ($fsize == undefined) {
-      var $fsize = window.Cookies.get('fsize');
+      var $fsize = Cookies.get('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "1.15rem";
       }
     }
 
-    window.Cookies.set("fsize", $fsize, {
+    Cookies.set("fsize", $fsize, {
       expires: 7,
       path: "/",
       secure: true
