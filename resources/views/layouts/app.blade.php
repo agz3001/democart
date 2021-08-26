@@ -134,8 +134,6 @@
         </div>
       </footer>
     </div>
-    <!-- js-cookie -->
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
     <!--<script src="{{ mix('js/style.js') }}" type="module"></script>-->
 
@@ -150,5 +148,7 @@
     <!-- IE11やAndroidブラウザ用のjsファイル-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script src="{{asset('js/drawer.js')}}" type="module"></script>
+    <!-- js-cookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 </body>
 </html>

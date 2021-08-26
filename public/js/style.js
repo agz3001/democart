@@ -106,14 +106,14 @@ $(document).ready(function () {
 
   function medium($fsize) {
     if ($fsize == undefined) {
-      var $fsize = Cookies.get('fsize');
+      var $fsize = window.Cookies.get('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "0.9rem";
       }
     }
 
-    Cookies.set("fsize", $fsize, {
+    window.Cookies.set("fsize", $fsize, {
       expires: 7,
       path: "/",
       secure: true
@@ -124,14 +124,14 @@ $(document).ready(function () {
 
   function large($fsize) {
     if ($fsize == undefined) {
-      var $fsize = Cookies.get('fsize');
+      var $fsize = window.Cookies.get('fsize');
 
       if ($fsize == undefined) {
         var $fsize = "1.15rem";
       }
     }
 
-    Cookies.set("fsize", $fsize, {
+    window.Cookies.set("fsize", $fsize, {
       expires: 7,
       path: "/",
       secure: true
