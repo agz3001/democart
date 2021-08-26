@@ -37403,21 +37403,22 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /* 文字サーズ変更ボタン */
 $(document).ready(function () {
-  medium();
-  large();
+  fontSize();
   $(".medium").click(function () {
-    medium("0.9rem");
+    fontSize("0.9rem", "normal");
   });
   $(".large").click(function () {
-    large("1.15rem");
+    fontSize("1.15rem", "bold");
   });
 
-  function medium($fsize) {
-    if ($fsize == undefined) {
+  function fontSize($fsize, $fweight) {
+    if ($fsize == undefined && $fweight == undefined) {
       var $fsize = window.Cookies.get('fsize');
+      var $fweight = window.Cookies.get("fweight");
 
-      if ($fsize == undefined) {
+      if ($fsize == undefined && $fweight == undefined) {
         var $fsize = "0.9rem";
+        var $fweight = "normal";
       }
     }
 
@@ -37426,26 +37427,17 @@ $(document).ready(function () {
       path: "/",
       secure: true
     });
-    $(".modify").removeClass("font-weight-bold");
-    $(".modify-btn").css("font-size", $fsize);
-  }
-
-  function large($fsize) {
-    if ($fsize == undefined) {
-      var $fsize = window.Cookies.get('fsize');
-
-      if ($fsize == undefined) {
-        var $fsize = "1.15rem";
-      }
-    }
-
-    window.Cookies.set("fsize", $fsize, {
+    window.Cookies.set("fweight", $fweight, {
       expires: 7,
       path: "/",
       secure: true
     });
-    $(".modify").addClass("font-weight-bold");
-    $(".modify-btn").css("font-size", $fsize);
+    $(".modify").css({
+      "font-weight": $fweight
+    });
+    $(".modify-btn").css({
+      "font-size": $fsize
+    });
   }
 });
 /*
