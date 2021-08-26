@@ -37409,10 +37409,10 @@ $(document).ready(function () {
     medium("0.9rem");
   });
   $(".large").click(function () {
-    large("2.15rem");
+    large("1.15rem");
   });
 
-  window.onload = function medium($fsize) {
+  function medium($fsize) {
     if ($fsize == undefined) {
       var $fsize = window.sessionStorage.getItem('fsize');
 
@@ -37424,21 +37424,21 @@ $(document).ready(function () {
     window.sessionStorage.setItem("fsize", $fsize);
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
-  };
+  }
 
-  window.onload = function large($fsize) {
+  function large($fsize) {
     if ($fsize == undefined) {
       var $fsize = window.sessionStorage.getItem('fsize');
 
       if ($fsize == undefined) {
-        var $fsize = "2.15rem";
+        var $fsize = "1.15rem";
       }
     }
 
     window.sessionStorage.setItem("fsize", $fsize);
     $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
-  };
+  }
 });
 /*
 $(document).ready(function(){

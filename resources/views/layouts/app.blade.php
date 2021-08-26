@@ -136,8 +136,7 @@
     </div>
     <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
     <!--<script src="{{ mix('js/style.js') }}" type="module"></script>-->
-    <!-- jquery.cookie.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    
     <!-- jquery & iScroll -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
