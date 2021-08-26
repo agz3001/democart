@@ -15,7 +15,7 @@ $(document).ready(function(){
         var $fsize ="0.9rem";
       }
     }
-    window.$.cookie("fsize", $fsize, {expires:7, path:"/"});
+    window.$.cookie("fsize", "$fsize", {expires:7, path:"/", secure:true});
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
@@ -26,7 +26,7 @@ $(document).ready(function(){
         var $fsize ="1.15rem";
       }
     }
-    window.$.cookie("fsize", $fsize, {expires:7, path:"/"});
+    window.$.cookie("fsize", "$fsize", {expires:7, path:"/", secure:true});
     $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }

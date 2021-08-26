@@ -113,9 +113,10 @@ $(document).ready(function () {
       }
     }
 
-    window.$.cookie("fsize", $fsize, {
+    window.$.cookie("fsize", "$fsize", {
       expires: 7,
-      path: "/"
+      path: "/",
+      secure: true
     });
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
@@ -130,9 +131,10 @@ $(document).ready(function () {
       }
     }
 
-    window.$.cookie("fsize", $fsize, {
+    window.$.cookie("fsize", "$fsize", {
       expires: 7,
-      path: "/"
+      path: "/",
+      secure: true
     });
     $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
