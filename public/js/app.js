@@ -37421,7 +37421,7 @@ $(document).ready(function () {
       }
     }
 
-    Cookies.set("fsize", "$fsize", {
+    Cookies.set("fsize", $fsize, {
       expires: 7,
       path: "/",
       secure: true
@@ -37439,7 +37439,7 @@ $(document).ready(function () {
       }
     }
 
-    Cookies.set("fsize", "$fsize", {
+    Cookies.set("fsize", $fsize, {
       expires: 7,
       path: "/",
       secure: true

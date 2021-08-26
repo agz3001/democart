@@ -15,7 +15,7 @@ $(document).ready(function(){
         var $fsize ="0.9rem";
       }
     }
-    Cookies.set("fsize", "$fsize", {expires:7, path:"/", secure:true});
+    Cookies.set("fsize", $fsize, {expires:7, path:"/", secure:true});
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
@@ -26,7 +26,7 @@ $(document).ready(function(){
         var $fsize ="1.15rem";
       }
     }
-    Cookies.set("fsize", "$fsize", {expires:7, path:"/", secure:true});
+    Cookies.set("fsize", $fsize, {expires:7, path:"/", secure:true});
     $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
