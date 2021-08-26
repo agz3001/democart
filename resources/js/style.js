@@ -10,23 +10,23 @@ $(document).ready(function(){
   });
   function medium($fsize){
     if($fsize ==undefined){
-      var $fsize = window.$.cookie( 'fsize' );
+      var $fsize = Cookies.get( 'fsize' );
       if($fsize ==undefined){
         var $fsize ="0.9rem";
       }
     }
-    window.$.cookie("fsize", "$fsize", {expires:7, path:"/", secure:true});
+    Cookies.set("fsize", "$fsize", {expires:7, path:"/", secure:true});
     $(".modify").removeClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
   function large($fsize){
     if($fsize ==undefined){
-      var $fsize = window.$.cookie( 'fsize' );
+      var $fsize = Cookies.get( 'fsize' );
       if($fsize ==undefined){
         var $fsize ="1.15rem";
       }
     }
-    window.$.cookie("fsize", "$fsize", {expires:7, path:"/", secure:true});
+    Cookies.set("fsize", "$fsize", {expires:7, path:"/", secure:true});
     $(".modify").addClass("font-weight-bold");
     $(".modify-btn").css("font-size", $fsize);
   }
