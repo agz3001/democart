@@ -16,7 +16,7 @@ $(document).ready(function(){
         var $fweight ="normal";
       }
     }
-    window.Cookies.set("fsize", $fsize, {expires:7, path:"/", secure:true, sameSite: 'strict'});
+    window.Cookies.set("fsize", $fsize);
     window.Cookies.set("fweight", $fweight, {expires:7, path:"/", secure:true, sameSite: 'strict'});
     $(".modify").css({"font-weight": $fweight});
     $(".modify-btn").css({"font-size": $fsize});
