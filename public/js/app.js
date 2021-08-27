@@ -37425,12 +37425,14 @@ $(document).ready(function () {
     window.Cookies.set("fsize", $fsize, {
       expires: 7,
       path: "/",
-      secure: true
+      secure: true,
+      sameSite: 'strict'
     });
     window.Cookies.set("fweight", $fweight, {
       expires: 7,
       path: "/",
-      secure: true
+      secure: true,
+      sameSite: 'strict'
     });
     $(".modify").css({
       "font-weight": $fweight
