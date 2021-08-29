@@ -7,21 +7,20 @@ $(document).ready(function(){
   $(".large").click(function(){
     fontSize("1.15rem", "bold");
   });
-  function fontSize($fsize){
+  function fontSize($fsize, $fweight){
 
     if($fsize ==undefined && $fweight ==undefined){
       var $fsize =Cookies.get( 'fsize' );
       var $fweight =Cookies.get("fweight");
-
       if($fsize ==undefined && $fweight ==undefined){
         var $fsize ="0.9rem";
-        var  $fweight ="normal";
+        var $fweight ="normal";
       }
     }
     Cookies.set("fsize", $fsize);
     Cookies.set("fweight", $fweight);
     $(".modify-btn").css({"font-size": $fsize});
-    $(".modify").css({"font-size": $fweight});
+    $(".modify").css({"font-weight": $fweight});
   }
 });
 

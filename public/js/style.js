@@ -103,7 +103,7 @@ $(document).ready(function () {
     fontSize("1.15rem", "bold");
   });
 
-  function fontSize($fsize) {
+  function fontSize($fsize, $fweight) {
     if ($fsize == undefined && $fweight == undefined) {
       var $fsize = Cookies.get('fsize');
       var $fweight = Cookies.get("fweight");
@@ -120,7 +120,7 @@ $(document).ready(function () {
       "font-size": $fsize
     });
     $(".modify").css({
-      "font-size": $fweight
+      "font-weight": $fweight
     });
   }
 });
