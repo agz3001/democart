@@ -8,6 +8,7 @@ $(document).ready(function(){
     fontSize("1.15rem", "bold");
   });
   function fontSize($fsize, $fweight){
+
     if($fsize ==undefined && $fweight ==undefined){
       var $fsize = Cookies.get( 'fsize' );
       var $fweight =Cookies.get("fweight");
@@ -17,7 +18,7 @@ $(document).ready(function(){
       }
     }
     Cookies.set("fsize", $fsize);
-    Cookies.set("fweight", $fweight, {domain:'pumpkin-cart7.sakura.ne.jp', secure:true, sameSite: 'none'});
+    Cookies.set("fweight", $fweight, {secure:true});
     $(".modify").css({"font-weight": $fweight});
     $(".modify-btn").css({"font-size": $fsize});
 

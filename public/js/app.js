@@ -37424,9 +37424,7 @@ $(document).ready(function () {
 
     Cookies.set("fsize", $fsize);
     Cookies.set("fweight", $fweight, {
-      domain: 'pumpkin-cart7.sakura.ne.jp',
-      secure: true,
-      sameSite: 'none'
+      secure: true
     });
     $(".modify").css({
       "font-weight": $fweight
