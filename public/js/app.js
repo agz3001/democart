@@ -37412,6 +37412,9 @@ $(document).ready(function () {
   });
 
   function fontSize($fsize) {
+    $.cookie("fsize", null);
+    $.cookie("fweight", null);
+
     if ($fsize == undefined) {
       var $fsize = $.cookie('fsize');
 

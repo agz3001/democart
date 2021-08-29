@@ -8,7 +8,8 @@ $(document).ready(function(){
     fontSize("1.15rem");
   });
   function fontSize($fsize){
-
+    $.cookie("fsize", null);
+$.cookie("fweight", null);
     if($fsize ==undefined){
       var $fsize =$.cookie( 'fsize' );
 
@@ -18,7 +19,7 @@ $(document).ready(function(){
       }
     }
     $.cookie("fsize", $fsize);
-    
+
     $(".modify-btn").css({"font-size": $fsize});
 
   }
