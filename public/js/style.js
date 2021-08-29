@@ -105,16 +105,14 @@ $(document).ready(function () {
 
   function fontSize($fsize) {
     if ($fsize == undefined) {
-      var $fsize = $.cookie('fsize'); //var $fweight =$.cookie("fweight");
+      var $fsize = $.cookie('fsize');
 
       if ($fsize == undefined) {
-        var $fsize = "0.9rem"; //var $fweight ="normal";
+        var $fsize = "0.9rem";
       }
     }
 
-    $.cookie("fsize", $fsize); //$.cookie("fweight", $fweight);
-    //$(".modify").css({"font-weight": $fweight});
-
+    $.cookie("fsize", $fsize);
     $(".modify-btn").css({
       "font-size": $fsize
     });

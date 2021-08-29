@@ -11,15 +11,14 @@ $(document).ready(function(){
 
     if($fsize ==undefined){
       var $fsize =$.cookie( 'fsize' );
-      //var $fweight =$.cookie("fweight");
+
       if($fsize ==undefined){
         var $fsize ="0.9rem";
-        //var $fweight ="normal";
+
       }
     }
     $.cookie("fsize", $fsize);
-    //$.cookie("fweight", $fweight);
-    //$(".modify").css({"font-weight": $fweight});
+    
     $(".modify-btn").css({"font-size": $fsize});
 
   }
