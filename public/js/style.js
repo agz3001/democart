@@ -105,8 +105,8 @@ $(document).ready(function () {
 
   function fontSize($fsize, $fweight) {
     if ($fsize == undefined && $fweight == undefined) {
-      var $fsize = window.Cookies.get('fsize');
-      var $fweight = window.Cookies.get("fweight");
+      var $fsize = Cookies.get('fsize');
+      var $fweight = Cookies.get("fweight");
 
       if ($fsize == undefined && $fweight == undefined) {
         var $fsize = "0.9rem";
@@ -114,12 +114,10 @@ $(document).ready(function () {
       }
     }
 
-    window.Cookies.set("fsize", $fsize);
-    window.Cookies.set("fweight", $fweight, {
-      expires: 7,
-      path: "/",
+    Cookies.set("fsize", $fsize);
+    Cookies.set("fweight", $fweight, {
       secure: true,
-      sameSite: 'strict'
+      sameSite: 'none'
     });
     $(".modify").css({
       "font-weight": $fweight

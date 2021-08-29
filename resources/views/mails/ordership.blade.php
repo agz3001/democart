@@ -31,9 +31,9 @@
 
 @component('mail::subcopy')
     {{ config('app.name') }}<br>
-    Mail: {{ env('MAIL_FROM_ADDRESS') }}<br>
+    Mail: {{ config('mail.address') }}<br>
     TEL: 090-xxxx-####<br>
-    HP: {{ env('APP_URL') }}
+    HP: {{ config('app.url') }}
 @endcomponent
 
 @endcomponent

@@ -9,20 +9,21 @@ $(document).ready(function(){
   });
   function fontSize($fsize, $fweight){
     if($fsize ==undefined && $fweight ==undefined){
-      var $fsize = window.Cookies.get( 'fsize' );
-      var $fweight =window.Cookies.get("fweight");
+      var $fsize = Cookies.get( 'fsize' );
+      var $fweight =Cookies.get("fweight");
       if($fsize ==undefined && $fweight ==undefined){
         var $fsize ="0.9rem";
         var $fweight ="normal";
       }
     }
-    window.Cookies.set("fsize", $fsize);
-    window.Cookies.set("fweight", $fweight, {expires:7, path:"/", secure:true, sameSite: 'strict'});
+    Cookies.set("fsize", $fsize);
+    Cookies.set("fweight", $fweight, {secure:true, sameSite: 'none'});
     $(".modify").css({"font-weight": $fweight});
     $(".modify-btn").css({"font-size": $fsize});
 
   }
 });
+
 /*
 $(document).ready(function(){
   $(".medium").click(function(){
