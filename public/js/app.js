@@ -37405,30 +37405,24 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 $(document).ready(function () {
   fontSize();
   $(".medium").click(function () {
-    fontSize("0.9rem", "normal");
+    fontSize("0.9rem");
   });
   $(".large").click(function () {
-    fontSize("1.15rem", "bold");
+    fontSize("1.15rem");
   });
 
-  function fontSize($fsize, $fweight) {
-    if ($.cookie('fsize') == undefined && $.cookie("fweight") == undefined) {
-      var $fsize = $.cookie('fsize');
-      var $fweight = $.cookie("fweight");
+  function fontSize($fsize) {
+    if ($fsize == undefined) {
+      var $fsize = $.cookie('fsize'); //var $fweight =$.cookie("fweight");
 
-      if ($.cookie('fsize') == undefined && $.cookie("fweight") == undefined) {
-        var $fsize = "0.9rem";
-        var $fweight = "normal";
+      if ($fsize == undefined) {
+        var $fsize = "0.9rem"; //var $fweight ="normal";
       }
     }
 
-    $.cookie("fsize", $fsize);
-    $.cookie("fweight", $fweight, {
-      secure: true
-    });
-    $(".modify").css({
-      "font-weight": $fweight
-    });
+    $.cookie("fsize", $fsize); //$.cookie("fweight", $fweight);
+    //$(".modify").css({"font-weight": $fweight});
+
     $(".modify-btn").css({
       "font-size": $fsize
     });
