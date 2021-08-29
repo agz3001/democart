@@ -10,15 +10,15 @@ $(document).ready(function(){
   function fontSize($fsize, $fweight){
 
     if($fsize ==undefined && $fweight ==undefined){
-      var $fsize = Cookies.get( 'fsize' );
-      var $fweight =Cookies.get("fweight");
+      var $fsize =$.cookie( 'fsize' );
+      var $fweight =$.cookie("fweight");
       if($fsize ==undefined && $fweight ==undefined){
         var $fsize ="0.9rem";
         var $fweight ="normal";
       }
     }
-    Cookies.set("fsize", $fsize);
-    Cookies.set("fweight", $fweight, {secure:true});
+    $.cookie("fsize", $fsize);
+    $.cookie("fweight", $fweight, {secure:true});
     $(".modify").css({"font-weight": $fweight});
     $(".modify-btn").css({"font-size": $fsize});
 

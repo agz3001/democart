@@ -105,8 +105,8 @@ $(document).ready(function () {
 
   function fontSize($fsize, $fweight) {
     if ($fsize == undefined && $fweight == undefined) {
-      var $fsize = Cookies.get('fsize');
-      var $fweight = Cookies.get("fweight");
+      var $fsize = $.cookie('fsize');
+      var $fweight = $.cookie("fweight");
 
       if ($fsize == undefined && $fweight == undefined) {
         var $fsize = "0.9rem";
@@ -114,8 +114,8 @@ $(document).ready(function () {
       }
     }
 
-    Cookies.set("fsize", $fsize);
-    Cookies.set("fweight", $fweight, {
+    $.cookie("fsize", $fsize);
+    $.cookie("fweight", $fweight, {
       secure: true
     });
     $(".modify").css({
