@@ -104,11 +104,11 @@ $(document).ready(function () {
   });
 
   function fontSize($fsize, $fweight) {
-    if ($fsize == undefined && $fweight == undefined) {
+    if ($.cookie('fsize') == undefined && $.cookie("fweight") == undefined) {
       var $fsize = $.cookie('fsize');
       var $fweight = $.cookie("fweight");
 
-      if ($fsize == undefined && $fweight == undefined) {
+      if ($.cookie('fsize') == undefined && $.cookie("fweight") == undefined) {
         var $fsize = "0.9rem";
         var $fweight = "normal";
       }
