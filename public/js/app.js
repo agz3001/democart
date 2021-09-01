@@ -37413,8 +37413,9 @@ $(document).ready(function () {
 
   function fontSize($fsize, $fweight) {
     if ($fsize == undefined && $fweight == undefined) {
-      var $fsize = Cookies.get('fsize');
-      var $fweight = Cookies.get("fweight");
+      var Cookies2 = Cookies.noConflict();
+      var $fsize = Cookies2.get('fsize');
+      var $fweight = Cookies2.get("fweight");
 
       if ($fsize == undefined && $fweight == undefined) {
         var $fsize = "0.9rem";
@@ -37422,8 +37423,8 @@ $(document).ready(function () {
       }
     }
 
-    Cookies.set("fsize", $fsize);
-    Cookies.set("fweight", $fweight);
+    Cookies2.set("fsize", $fsize);
+    Cookies2.set("fweight", $fweight);
     $(".modify-btn").css({
       "font-size": $fsize
     });
