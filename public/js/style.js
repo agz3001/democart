@@ -114,8 +114,12 @@ $(document).ready(function () {
       }
     }
 
-    Cookies.set("fsize", $fsize);
-    Cookies.set("fweight", $fweight);
+    Cookies.set("fsize", $fsize, {
+      secure: true
+    });
+    Cookies.set("fweight", $fweight, {
+      secure: true
+    });
     $(".modify-btn").css({
       "font-size": $fsize
     });
