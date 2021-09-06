@@ -37578,12 +37578,8 @@ $(document).ready(function () {
       }
     }
 
-    Cookies.set("fsize", $fsize, {
-      secure: true
-    });
-    Cookies.set("fweight", $fweight, {
-      secure: true
-    });
+    Cookies.set("fsize", $fsize);
+    Cookies.set("fweight", $fweight);
     $(".modify-btn").css({
       "font-size": $fsize
     });
@@ -37592,19 +37588,6 @@ $(document).ready(function () {
     });
   }
 });
-/*
-$(document).ready(function(){
-  $(".medium").click(function(){
-    $(".modify").removeClass("font-weight-bold");
-    $(".modify-btn").css("font-size", "0.9rem");
-  });
-  $(".large").click(function(){
-    $(".modify").addClass("font-weight-bold");
-    $(".modify-btn").css("font-size", "1.15rem");
-  });
-});
-*/
-
 /*ページトップへのスクロール;グローバル変数扱い*/
 
 window.scrolltop = function () {
@@ -37635,6 +37618,39 @@ window.onpageshow = function onpageshow() {
   target = document.getElementById("drawer_message_down");
   target.innerHTML = "扉を閉じる";
 };
+/* carts/cart.blade.php, 積載量チェックのSweetAlert2 */
+
+
+window.myfunction = function () {
+  var elem = document.getElementById("weight_amount").textContent;
+  var button = document.getElementById("purchase");
+
+  if (elem > 20) {
+    button.disabled = true;
+    warning();
+  } else {
+    button.disabled = false;
+    success();
+  }
+};
+
+function success() {
+  swal({
+    type: "success",
+    title: '総積載量チェック',
+    text: "配達可能です",
+    confirmButtonColor: '#3085d6',
+    confirmButtonText: 'OK'
+  });
+}
+
+function warning() {
+  swal({
+    type: "warning",
+    title: "購入量を減らしてください",
+    text: "総積載量が 20㎏ を超えています!!"
+  });
+}
 
 /***/ }),
 
@@ -37667,9 +37683,9 @@ window.onpageshow = function onpageshow() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Shuhei\Desktop\laravel\democart\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\Shuhei\Desktop\laravel\democart\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Users\Shuhei\Desktop\laravel\democart\resources\sass\style.scss */"./resources/sass/style.scss");
+__webpack_require__(/*! C:\Users\agz30\OneDrive\デスクトップ\laravel\democart\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\agz30\OneDrive\デスクトップ\laravel\democart\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\agz30\OneDrive\デスクトップ\laravel\democart\resources\sass\style.scss */"./resources/sass/style.scss");
 
 
 /***/ })

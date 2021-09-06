@@ -148,7 +148,5 @@
     <!-- IE11やAndroidブラウザ用のjsファイル-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script src="{{asset('js/drawer.js')}}" type="module"></script>
-    <!-- js-cookie -->
-    <!--<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>-->
 </body>
 </html>

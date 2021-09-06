@@ -100,7 +100,7 @@ class ShopController extends Controller
         } elseif (15 <=$weight_amount && $weight_amount <20) {
           $total_weight_charge =2000;
         } else {
-          return false;
+          $total_weight_charge =3000;
         }
 
         $total_charge =$join_table_sum + $service_charge +$shopping_bag +$total_weight_charge;
@@ -178,7 +178,7 @@ class ShopController extends Controller
         } elseif (15 <=$weight_amount && $weight_amount <20) {
           $total_weight_charge =2000;
         } else {
-          return false;
+          $total_weight_charge =3000;
         }
 
         $total_charge =$join_table_sum + $service_charge +$shopping_bag +$total_weight_charge;
@@ -218,7 +218,7 @@ class ShopController extends Controller
         } elseif (15 <=$weight_amount && $weight_amount <20) {
           $total_weight_charge =2000;
         } else {
-          return false;
+          $total_weight_charge =3000;
         }
 
         $total_charge =$checkout_fee + $service_charge +$shopping_bag +$total_weight_charge;

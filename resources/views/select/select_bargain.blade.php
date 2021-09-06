@@ -49,6 +49,9 @@
   <!--以下の部分がページ右側です。-->
   <div class="col">
     <div class="container">
+      <div>
+        <img src="{{asset('public/storage/image/bg2.jpg')}}" style="width:100%; height:auto;">
+      </div>
       <h3 class="mb-4 text-center">今月のおすすめ</h3>
       <!--javascript message-->
       <p id="drawer_message"></p>

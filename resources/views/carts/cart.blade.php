@@ -38,7 +38,7 @@
         <table class="table table-hover table-sm table-borderless text-right">
           <tr>
             <td>総積載量</td>
-            <td>{{$weight_amount}} kg</td>
+            <td><span id="weight_amount">{{$weight_amount}}</span> kg</td>
           </tr>
           <tr>
             <td>小計</td>
@@ -54,9 +54,9 @@
           </tr>
           <tr>
             <td>積載料金</td>
-            <td>¥ {{$total_weight_charge}}</td>
+            <td>¥ {{ number_format($total_weight_charge) }}</td>
           </tr>
-          <tr style="border-top: 1px dashed black;">
+          <tr style="border-top: 2px dashed black;">
             <td style="font-size:1.2em; font-weight:bold;">合計</td>
             <td style="font-size:1.2em; font-weight:bold;">
               ¥ {{ number_format($total_charge) }}
@@ -73,7 +73,7 @@
       </a>
       <!-- モーダルを開くボタン・リンク -->
       <!--data-toggle="modal" data-target="#testModal"を書くことで、testModalというid名のモーダルウィンドウを表示することができる-->
-      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#testModal">
+      <button type="button" class="btn btn-warning" onclick="window.myfunction()" data-toggle="modal" data-target="#testModal">
         <i class="fas fa-check"> お会計へ</i>
       </button>
 
@@ -91,7 +91,7 @@
                       <button type="button" class="btn btn-default" data-dismiss="modal">戻る</button>
                       <form method="post" action="/checkout">
                         @csrf
-                        <button type="submit" class="btn btn-warning">
+                        <button type="submit" class="btn btn-warning" id="purchase">
                           購入する
                         </button>
                       </form>
@@ -105,10 +105,9 @@
     <br>
     <br>
     <div class="text-center mt-5">
-      <a href="/select" class="btn btn-success modify">商品検索画面へ</a>
+      <a href="/select" class="btn btn-success">商品検索画面へ</a>
     </div>
     @endif
   </div>
 </div>
-
 @endsection

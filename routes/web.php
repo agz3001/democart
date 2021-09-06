@@ -45,9 +45,9 @@ Route::get("/search","ShopController@search");
 Route::group(["middleware"=>["auth"]], function(){
   Route::get("/home", function(){
     return view("/select");}); # ‘/home’というパスにアクセスすると、‘/select’にリダイレクトされる
+  Route::post("/cart", "ShopController@store");
   Route::get("/cart", "ShopController@show")->name("cart");
   Route::get("/history", "ShopController@orderhistory");
-  Route::post("/cart", "ShopController@store");
   Route::post("/destroy", "ShopController@destroy");
   Route::post("/checkout", "ShopController@checkout");
 });

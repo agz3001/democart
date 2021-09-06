@@ -125,7 +125,5 @@
     <!-- IE11やAndroidブラウザ用のSweetAlertjsファイル-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
     <script src="{{asset('js/drawer.js')}}"></script>
-    <!-- js-cookie -->
-    <!--<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>-->
 </body>
 </html>
