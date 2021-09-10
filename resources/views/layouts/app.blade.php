@@ -34,8 +34,8 @@
   <!--Android画像読み込むファイル-->
   <link rel="manifest" href="public/manifest.json">
   <script>
-  
-      if ('serviceWorker' in navigator) {
+
+      if ('public/serviceWorker' in navigator) {
         navigator.serviceWorker.register("public/serviceWorker.js")
           .then(function(registration) {
             console.log("serviceWorker registed.");
