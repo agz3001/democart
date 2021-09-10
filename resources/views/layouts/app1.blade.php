@@ -9,13 +9,16 @@
   <!--OGP設定.SNS上でシェアされると、タイトル/URL/概要/画像を伝えるタグ情報-->
   <meta property="og:title" content="かぼちゃのカート"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://pumpkin-cart5.sakura.ne.jp"/>
-  <meta property="og:image" content="画像のURL" />
+  <meta property="og:url" content="https://pumpkin-cart7.sakura.ne.jp"/>
+  <meta property="og:image" content="public/storage/image/icon_main.png" />
 　<!--iOS版 WebClip. アプリストアを経由しないPWA化-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="かぼちゃのカート">
-  <link rel="apple-touch-icon" href="public/storage/image/pumpkin.webp" sizes="72x72">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-icon_main.png">
+  <link rel="icon" type="image/png" href="/android-icon-192x192_main.png">
+  <link rel="manifest" href="/manifest.json">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!--タイトル-->
@@ -56,7 +59,7 @@
           <br>
           <br>
           <ul>
-            <li><img src="{{ asset('public/storage/image/pumpkin.webp') }}" class="px-0" style="height: 20px;"></li>
+            <li><img src="{{ asset('public/storage/image/icon_sub.png') }}" class="px-0" style="height: 20px;"></li>
             <li><a href="/" style="text-decoration: none; color:#212529;"><h1 id="service-title-text" class="px-0">かぼちゃのカート</h1></a></li>
           </ul>
         </div>
