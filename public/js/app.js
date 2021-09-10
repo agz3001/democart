@@ -37502,6 +37502,8 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./style */ "./resources/js/style.js");
 
+__webpack_require__(/*! ./serviceWorker */ "./resources/js/serviceWorker.js");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37547,6 +37549,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/serviceWorker.js":
+/*!***************************************!*\
+  !*** ./resources/js/serviceWorker.js ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+self.addEventListener('fetch', function (event) {});
 
 /***/ }),
 
