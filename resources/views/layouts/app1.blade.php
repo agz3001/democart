@@ -15,10 +15,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="かぼちゃのカート">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-icon_main.png">
-  <link rel="icon" type="image/png" href="/android-icon-192x192_main.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="shortcut icon" href="public/favicon.ico">
+  <link rel="apple-touch-icon" href="public/apple-icon_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
+  <link rel="manifest" href="public/manifest.json">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!--タイトル-->
