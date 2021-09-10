@@ -30,7 +30,10 @@
   <link rel="icon" type="image/png" href="public/android-icon-144x144_main.png">
   <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
   <!-- serviceWorker.js -->
-  <script src="{{asset('js/serviceWorker.js')}}"></script>
+  <script>
+  self.addEventListener('fetch', function(event) {
+  });
+  </script>
   <!--Android画像読み込むファイル-->
   <link rel="manifest" href="public/manifest.json">
   <script>
