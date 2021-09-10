@@ -35,9 +35,10 @@
   <link rel="manifest" href="public/manifest.json">
   <script>
 
-      if ('public/serviceWorker' in navigator) {
-        navigator.serviceWorker.register("public/serviceWorker.js")
-          .then(function(registration) {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("public/serviceWorker.js", {
+          scope: "/"
+        }).then(function(registration) {
             console.log("serviceWorker registed.");
           }).catch(function(error) {
             console.warn("serviceWorker error.", error);
