@@ -39,14 +39,14 @@
    "density": "4.0"
  }
 ],
-start_url: "/",
-display: "standalone",
-orientation: "portrait-primary",
-background_color: "#fff",
-theme_color: "#eb8f34",
-description: "即日配達！最短20分でお届け！",
-dir: "ltr",
-lang: "ja-jp",
-related_applications: [ ],
-prefer_related_applications: false
+"start_url": "/",
+"display": "standalone",
+"orientation": "portrait-primary",
+"background_color": "#fff",
+"theme_color": "#eb8f34",
+"description": "即日配達！最短20分でお届け！",
+"dir": "ltr",
+"lang": "ja-jp",
+"related_applications": [ ],
+"prefer_related_applications": false
 }
