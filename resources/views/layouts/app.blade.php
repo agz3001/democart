@@ -30,22 +30,9 @@
   <link rel="icon" type="image/png" href="public/android-icon-144x144_main.png">
   <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
   <!-- serviceWorker.js -->
-
+  <script src="{{asset('js/serviceWorker.js')}}"></script>
   <!--Android画像読み込むファイル-->
   <link rel="manifest" href="public/manifest.json">
-  <script>
-
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register("public/serviceWorker.js", {
-          scope: "/"
-        }).then(function(registration) {
-            console.log("serviceWorker registed.");
-          }).catch(function(error) {
-            console.warn("serviceWorker error.", error);
-          });
-      }
-
-  </script>
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!--タイトル-->
