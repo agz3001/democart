@@ -65,13 +65,6 @@
     <div id="app">
       <div class="container">
         <div id="service-title" class="mb-2 px-0">
-          <div id="size-button" class="text-right modify">
-            文字サイズ
-            <button class="size-button medium">中</button>
-            <button class="size-button large">大</button>
-          </div>
-          <br>
-          <br>
           <ul>
             <li><img src="{{ asset('public/storage/image/icon_sub.png') }}" class="px-0" style="height: 20px;"></li>
             <li><a href="/" style="text-decoration: none; color:#212529;"><h1 id="service-title-text" class="px-0">かぼちゃのカート</h1></a></li>
