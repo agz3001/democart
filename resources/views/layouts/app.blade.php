@@ -71,14 +71,14 @@
           </ul>
         </div>
         <div class="row d-flex justify-content-around">
-          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/select" role="button">商品を探す</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/select" role="button">商品を探す</a>
           @guest
-              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="{{ route('login') }}">会員入口</a>
+              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('login') }}">会員入口</a>
               @if (Route::has('register'))
-              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="{{ route('register') }}">新規登録</a>
+              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('register') }}">新規登録</a>
               @endif
           @else
-              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="{{ route('logout') }}"
+              <a class="top-menu col-5 col-md-3 btn text-white" href="{{ route('logout') }}"
                  onclick="event.preventDefault();
                                document.getElementById('logout-form').submit();">
                   会員出口
@@ -86,11 +86,11 @@
               <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                   @csrf
               </form>
-              <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/cart" role="button">買い物かご</a>
+              <a class="top-menu col-5 col-md-3 btn text-white" href="/cart" role="button">買い物かご</a>
           @endguest
-          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/#today" role="button">今月の<br>おすすめ</a>
-          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/#howtouse" role="button">使い方</a>
-          <a class="top-menu col-5 col-md-3 btn text-white modify-btn" href="/#faq" role="button">よくある<br>質問</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/#today" role="button">今月の<br>おすすめ</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/#howtouse" role="button">使い方</a>
+          <a class="top-menu col-5 col-md-3 btn text-white" href="/#faq" role="button">よくある<br>質問</a>
         </div>
       </div>
 

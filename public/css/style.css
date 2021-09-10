@@ -15,6 +15,10 @@ h2 {
   font-weight: bold;
 }
 
+.modify {
+  font-weight: bold;
+}
+
 #service-title ul {
   /*箇条書きのポッチを消す*/
   list-style-type: none;
@@ -37,6 +41,7 @@ h2 {
 
 .top-menu {
   background-color: #eb8f34;
+  font-size: 1.15rem;
   font-weight: bold;
   height: 80px;
   margin-top: 5px;
