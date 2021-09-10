@@ -30,13 +30,13 @@
   <link rel="icon" type="image/png" href="public/android-icon-144x144_main.png">
   <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
   <!-- serviceWorker.js -->
-  
+
   <!--Android画像読み込むファイル-->
   <link rel="manifest" href="public/manifest.json">
   <script>
     window.addEventListener('load', function() {
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register("/serviceWorker.js")
+        navigator.serviceWorker.register("public/serviceWorker.js")
           .then(function(registration) {
             console.log("serviceWorker registed.");
           }).catch(function(error) {
