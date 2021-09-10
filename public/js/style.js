@@ -93,7 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+/* serviceWorkerの登録 */
+window.addEventListener('load', function () {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('js/serviceWorker.js').then(function () {
+      console.log('ServiceWorker registered');
+    })["catch"](function (error) {
+      console.warn('ServiceWorker error', error);
+    });
+  }
+});
 /* 文字サーズ変更ボタン */
+
 $(document).ready(function () {
   fontSize();
   $(".medium").click(function () {

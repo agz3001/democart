@@ -37559,15 +37559,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-window.addEventListener('load', function () {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/serviceworker.js').then(function () {
-      console.log('ServiceWorker registered');
-    })["catch"](function (error) {
-      console.warn('ServiceWorker error', error);
-    });
-  }
+self.addEventListener('install', function (e) {
+  console.log('ServiceWorker install');
 });
+self.addEventListener('activate', function (e) {
+  console.log('ServiceWorker activate');
+});
+self.addEventListener('fetch', function (event) {});
 
 /***/ }),
 
@@ -37578,7 +37576,18 @@ window.addEventListener('load', function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+/* serviceWorkerの登録 */
+window.addEventListener('load', function () {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('js/serviceWorker.js').then(function () {
+      console.log('ServiceWorker registered');
+    })["catch"](function (error) {
+      console.warn('ServiceWorker error', error);
+    });
+  }
+});
 /* 文字サーズ変更ボタン */
+
 $(document).ready(function () {
   fontSize();
   $(".medium").click(function () {

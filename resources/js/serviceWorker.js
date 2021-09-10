@@ -1,11 +1,9 @@
-window.addEventListener('load', () => {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('js/serviceWorker.js').
-      then(() => {
-        console.log('ServiceWorker registered')
-      }).
-      catch((error) => {
-        console.warn('ServiceWorker error', error)
-      })
-  }
+self.addEventListener('install', function (e) {
+  console.log('ServiceWorker install')
 })
+
+self.addEventListener('activate', function (e) {
+  console.log('ServiceWorker activate')
+})
+
+self.addEventListener('fetch', function (event) {})
