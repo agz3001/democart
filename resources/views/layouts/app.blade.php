@@ -15,8 +15,19 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="かぼちゃのカート">
+  <!--タブ画像-->
   <link rel="shortcut icon" href="public/favicon.ico">
-  <link rel="apple-touch-icon" href="public/apple-icon_main.png">
+  <!--iOS画像-->
+  <link rel="apple-touch-icon" href="public/apple-icon-72x72_main.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="public/apple-icon-114x114_main.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="public/apple-icon-120x120_main.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="public/apple-icon-192x192_main.png" sizes="192x192">
+  <!--Android画像-->
+  <link rel="icon" type="image/png" href="public/android-icon-36x36_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-48x48_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-72x72_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-96x96_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-144x144_main.png">
   <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
   <link rel="manifest" href="public/manifest.json">
   <!-- CSRF Token -->
