@@ -37502,8 +37502,6 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./style */ "./resources/js/style.js");
 
-__webpack_require__(/*! ./serviceWorker */ "./resources/js/serviceWorker.js");
-
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -37552,23 +37550,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./resources/js/serviceWorker.js":
-/*!***************************************!*\
-  !*** ./resources/js/serviceWorker.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-self.addEventListener('install', function (e) {
-  console.log('ServiceWorker install');
-});
-self.addEventListener('activate', function (e) {
-  console.log('ServiceWorker activate');
-});
-self.addEventListener('fetch', function (event) {});
-
-/***/ }),
-
 /***/ "./resources/js/style.js":
 /*!*******************************!*\
   !*** ./resources/js/style.js ***!
@@ -37579,7 +37560,7 @@ self.addEventListener('fetch', function (event) {});
 /* serviceWorkerの登録 */
 window.addEventListener('load', function () {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('js/serviceWorker.js').then(function () {
+    navigator.serviceWorker.register('public/serviceWorker.js').then(function () {
       console.log('ServiceWorker registered');
     })["catch"](function (error) {
       console.warn('ServiceWorker error', error);

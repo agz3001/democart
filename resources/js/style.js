@@ -1,7 +1,7 @@
 /* serviceWorkerの登録 */
 window.addEventListener('load', () => {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('js/serviceWorker.js').
+    navigator.serviceWorker.register('public/serviceWorker.js').
       then(() => {
         console.log('ServiceWorker registered')
       }).

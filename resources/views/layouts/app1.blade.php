@@ -10,7 +10,7 @@
   <meta property="og:title" content="かぼちゃのカート"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://pumpkin-cart7.sakura.ne.jp"/>
-  <meta property="og:image" content="public/storage/image/icon_main.png" />
+  <meta property="og:image" content="public/storage/image/icon/icon_main.png" />
 　<!--iOS版 WebClip. アプリストアを経由しないPWA化-->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -18,17 +18,13 @@
   <!--タブ画像-->
   <link rel="shortcut icon" href="public/favicon.ico">
   <!--iOS画像-->
-  <link rel="apple-touch-icon" href="public/apple-icon-72x72_main.png" sizes="72x72">
-  <link rel="apple-touch-icon" href="public/apple-icon-114x114_main.png" sizes="114x114">
-  <link rel="apple-touch-icon" href="public/apple-icon-120x120_main.png" sizes="120x120">
-  <link rel="apple-touch-icon" href="public/apple-icon-192x192_main.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="public/storage/image/icon/apple-icon-180x180_main.png" sizes="180x180">
+  <link rel="apple-touch-icon" href="public/storage/image/icon/apple-icon-192x192_main.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="public/storage/image/icon/apple-icon-512x512_main.png" sizes="512x512">
   <!--Android画像-->
-  <link rel="icon" type="image/png" href="public/android-icon-36x36_main.png">
-  <link rel="icon" type="image/png" href="public/android-icon-48x48_main.png">
-  <link rel="icon" type="image/png" href="public/android-icon-72x72_main.png">
-  <link rel="icon" type="image/png" href="public/android-icon-96x96_main.png">
-  <link rel="icon" type="image/png" href="public/android-icon-144x144_main.png">
-  <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
+  <link rel="icon" type="image/png" href="public/storage/image/icon/android-icon-180x180_main.png">
+  <link rel="icon" type="image/png" href="public/storage/image/icon/android-icon-192x192_main.png">
+  <link rel="icon" type="image/png" href="public/storage/image/icon/android-icon-512x512_main.png">
   <!--Android画像読み込むファイル-->
   <link rel="manifest" href="public/manifest.json">
   <!-- serviceWorker.js -->
@@ -66,7 +62,7 @@
       <div class="container">
         <div id="service-title" class="mb-2 px-0">
           <ul>
-            <li><img src="{{ asset('public/storage/image/icon_sub.png') }}" class="px-0" style="height: 20px;"></li>
+            <li><img src="{{ asset('public/storage/image/icon/p_icon.png') }}" class="px-0" style="height: 47px;"></li>
             <li><a href="/" style="text-decoration: none; color:#212529;"><h1 id="service-title-text" class="px-0">かぼちゃのカート</h1></a></li>
           </ul>
         </div>
