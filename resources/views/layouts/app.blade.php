@@ -26,9 +26,9 @@
   <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
   <link rel="icon" type="image/png" href="public/android-icon-512x512_main.png">
   <!--Android画像読み込むファイル-->
-  <link rel="manifest" href="public/manifest.json">
   <!-- serviceWorker.js -->
   <script src="{{asset('public/serviceWorker.js')}}"></script>
+  <link rel="manifest" href="public/manifest.json">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <!--タイトル-->
