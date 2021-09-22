@@ -3,7 +3,7 @@
 @section("title", "商品検索")
 @section("content")
 <div class="container">
-  <h3 class="text-center">商品の探し方を決めてください</h3>
+  <h3 class="text-center">商品の探し方を<br>下記よりお選び下さい</h3>
 
   <div class="row d-flex justify-content-center mt-5">
     <a class="col-10 col-md-5 btn btn-primary mx-1 mb-2 d-flex align-items-center justify-content-center text-dark" href="/select/bargain" role="button" style="height: 200px; font-size: 40px"><i class="far fa-hand-paper fa-xs"></i>&nbsp;今月のおすすめ</a>

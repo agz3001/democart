@@ -13,7 +13,7 @@
   <meta property="og:image" content="public/storage/image/icon/icon_main.png" />
 　<!--iOS版 WebClip. アプリストアを経由しないPWA化-->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="brown">
   <meta name="apple-mobile-web-app-title" content="かぼちゃのカート">
   <!--タブ画像-->
   <link rel="shortcut icon" href="public/favicon.ico">

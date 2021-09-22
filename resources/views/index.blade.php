@@ -2,7 +2,7 @@
 
 @section("title", "")
 @section("content")
-<p id="today" class="mb-4 text-center">今月のおすすめ</p>
+<p id="today" class="mb-4 text-center stroke">今月のおすすめ</p>
 <div class="container mb-5">
   <div id="carousel-card" class="carousel slide" data-interval="4000">
     <div class="carousel-inner">
@@ -37,7 +37,7 @@
 
 <!--サービスの手順-->
 <div id="howtouse" class="container my-4 text-center">
-  <div>サービスの手順</div>
+  <div class="stroke">サービスの手順</div>
 </div>
 
 <!---->
@@ -81,12 +81,12 @@
 
 <div id="faq" class="container">
   <div class="container QnA">
-    <div class="text-center">よくあるご質問</div>
+    <div class="text-center stroke">よくあるご質問</div>
     <div class="mb-2">
       <table>
         <tr>
           <th>問１</th>
-          <th class="text-center">会員入口から入れません。</th>
+          <th class="text-center">会員入口から<br>入れません。</th>
         </tr>
         <tr>
           <td class="align-top">答１</td>
@@ -117,7 +117,7 @@
   </div>
 </div>
 
-<div class="container bg-light" style="margin-bottom: 80px;">
+<div id="inquiry" class="container bg-light" style="margin-bottom: 80px;">
   <p class="text-center my-0">お問い合わせ</p>
   <p class="text-center my-0"><a href="mailto:osaka.cart108@gmail.com" style="color: #1d3994;"><i class="far fa-envelope"></i> osaka.cart108@gmail.com</a></p>
   <p class="text-center my-0"><a href="tel:117" style="color: #1d3994;"><i class="fas fa-phone-volume"></i> 090-xxxx-xxxx</a></p>

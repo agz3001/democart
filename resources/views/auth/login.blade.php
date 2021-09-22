@@ -14,7 +14,7 @@
             <label for="email">{{ __('メールアドレス') }}</label>
         </div>
         <div class="col-md-6">
-            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"  name="email" value="{{ old('email') }}" required autocomplete="off" placeholder="">
+            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror"  name="email" value="{{ old('email') }}" required autocomplete="off" placeholder="" style="font-size:1.15rem; font-weight:bold;">
             @error('email')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
@@ -28,7 +28,7 @@
               <label for="password">{{ __('暗証番号') }}</label>
           </div>
           <div class="col-md-6">
-              <input id="password" type="text" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="">
+              <input id="password" type="text" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="" style="font-size:1.15rem; font-weight:bold;">
               @error('password')
                   <span class="invalid-feedback" role="alert">
                       <strong>{{ $message }}</strong>

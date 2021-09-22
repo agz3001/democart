@@ -13,7 +13,7 @@
   <meta property="og:image" content="public/storage/image/icon/icon_main.png" />
   <!--iOS版 WebClip. アプリストアを経由しないPWA化-->
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="brown">
   <meta name="apple-mobile-web-app-title" content="かぼちゃのカート">
   <!--タブ画像-->
   <link rel="shortcut icon" href="public/favicon.ico">
@@ -62,7 +62,7 @@
       <div class="container">
         <div id="service-title" class="mb-2 px-0">
           <ul>
-            <li><img src="{{ asset('public/storage/image/icon/p_icon.png') }}" class="px-0" style="height: 47px;"></li>
+            <li><img src="{{ asset('public/storage/image/icon/icon_sub.png') }}" class="px-0" style="height: 47px;"></li>
             <li><a href="/" style="text-decoration: none; color:#212529;"><h1 id="service-title-text" class="px-0">かぼちゃのカート</h1></a></li>
           </ul>
         </div>

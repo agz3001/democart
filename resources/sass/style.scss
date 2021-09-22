@@ -9,7 +9,8 @@ h2{
   font-weight: bold;
   }
 .modify{
-  font-weight: bold;
+  //font-weight: ;
+  //font-size: 1.15rem;
 }
 
 #service-title ul{
@@ -38,31 +39,14 @@ h2{
   margin-left: 5px;
   margin-right: 5px;
 }
-/*フォントサイズ調整ボタン*/
-#size-button {
-  position:fixed;
-  top:5px;
-  right:5px;
-  z-index:3;
-}
-.size-button {
-  background-color: #fff;
-  border: 1px solid #999;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1rem;
-  line-height: 1;
-  padding: 11px;
-  text-align: center;
-  width: 40px;
-  &:hover,
-  &.active {
-    background-color: #AE2823;
-    color: #fff;
-  }
-}
 
 /* index */
+/* 一部テキストの角の太さ */
+.stroke {
+  font-size: 1.5rem;
+  -webkit-text-stroke-color: #eb8f34;
+  -webkit-text-stroke-width: thin;
+}
 /* carousel slider */
 #carousel-card .carousel-control-next,
 #carousel-card .carousel-control-prev {
@@ -102,7 +86,7 @@ ul {
   padding: 3px 10px;
 }
 .container .QnA th:nth-child(odd) {
-  background: #3366ff;
+  background: #e97a0dfa;
   color: #ffffff;
 
 }
@@ -110,7 +94,7 @@ ul {
   background: #ccccff;
 }
 .container .QnA td:nth-child(odd) {
-  color: #3366ff;
+  color: #e97a0dfa;
 }
 .container .QnA table td{
   padding: 3px 10px;
