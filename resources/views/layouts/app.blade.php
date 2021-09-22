@@ -18,13 +18,13 @@
   <!--タブ画像-->
   <link rel="shortcut icon" href="public/favicon.ico">
   <!--iOS画像-->
-  <link rel="apple-touch-icon" href="public/storage/image/apple-icon-180x180_main.png" sizes="180x180">
-  <link rel="apple-touch-icon" href="public/storage/image/apple-icon-192x192_main.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="public/storage/image/apple-icon-512x512_main.png" sizes="512x512">
+  <link rel="apple-touch-icon" href="public/apple-icon-180x180_main.png" sizes="180x180">
+  <link rel="apple-touch-icon" href="public/apple-icon-192x192_main.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="public/apple-icon-512x512_main.png" sizes="512x512">
   <!--Android画像-->
-  <link rel="icon" type="image/png" href="public/storage/image/android-icon-180x180_main.png">
-  <link rel="icon" type="image/png" href="public/storage/image/android-icon-192x192_main.png">
-  <link rel="icon" type="image/png" href="public/storage/image/android-icon-512x512_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-180x180_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-192x192_main.png">
+  <link rel="icon" type="image/png" href="public/android-icon-512x512_main.png">
   <!--Android画像読み込むファイル-->
   <link rel="manifest" href="public/manifest.json">
   <!-- serviceWorker.js -->
