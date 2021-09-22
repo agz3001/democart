@@ -44,22 +44,22 @@
 <div class="container mb-5 mx-auto">
   <div class="row d-flex justify-content-center">
     <div class="col-8 col-md-3 mb-5">
-      <img src="{{ asset('public/storage/image/ad/step_search.png') }}" alt="" class="square">
+      <img src="{{ asset('public/storage/image/step_search.png') }}" alt="" class="square">
       <div><u>手順 1</u></div>
       <p>アプリをダウンロード</p>
     </div>
     <div class="col-8 col-md-3 mb-5">
-      <img src="{{ asset('public/storage/ad/image/step_push.png') }}" alt="" class="square">
+      <img src="{{ asset('public/storage/image/step_push.png') }}" alt="" class="square">
       <div><u>手順 2</u></div>
       <p>商品を選ぶ</p>
     </div>
     <div class="col-8 col-md-3 mb-5">
-      <img src="{{ asset('public/storage/ad/image/step_login.png') }}" alt="" class="square">
+      <img src="{{ asset('public/storage/image/step_login.png') }}" alt="" class="square">
       <div><u>手順 3</u></div>
       <p>新規登録 / 会員入口より<br>入る</p>
     </div>
     <div class="col-8 col-md-3 mb-5">
-      <img src="{{ asset('public/storage/image/ad/step_cash.png') }}" alt="" class="square">
+      <img src="{{ asset('public/storage/image/step_cash.png') }}" alt="" class="square">
       <div><u>手順 4</u></div>
       <p>商品を確認し<br>「お会計へ」を選択する</p>
     </div>
