@@ -90,12 +90,12 @@
                 <a href="{{ route('login') }}"><i class="fas fa-user-alt" style="color: #fff;"></i></a>
                 <h2 class="foot modify">会員入口</h2>
               </div>
-              @if (Route::has('register'))
+              <!--@if (Route::has('register'))
               <div class="col-3 mx-0">
                 <a href="{{ route('register') }}"><i class="fas fa-user-edit" style="color: #fff;"></i></a>
                 <h2 class="foot modify">新規登録</h2>
               </div>
-              @endif
+              @endif-->
           @else
               <div class="col-3 mx-0">
                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
