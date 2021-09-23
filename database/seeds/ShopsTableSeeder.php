@@ -21,7 +21,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"171",
           "category" =>"野菜・果物",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_vegetable1.jpg",
+          "image_path" =>"storage/image/f_vegetable1.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -35,7 +35,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"63",
           "category" =>"野菜・果物",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_vegetable2.jpg",
+          "image_path" =>"storage/image/f_vegetable2.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -49,7 +49,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"野菜・果物",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_vegetable3.jpg",
+          "image_path" =>"storage/image/f_vegetable3.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -63,7 +63,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"139",
           "category" =>"野菜・果物",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_vegetable4.jpg",
+          "image_path" =>"storage/image/f_vegetable4.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -77,7 +77,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"214",
           "category" =>"野菜・果物",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_vegetable5.jpg",
+          "image_path" =>"storage/image/f_vegetable5.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -91,7 +91,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"322",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat1.jpg",
+          "image_path" =>"storage/image/f_meat1.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -105,7 +105,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"214",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat2.jpg",
+          "image_path" =>"storage/image/f_meat2.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -119,7 +119,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"430",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat3.jpg",
+          "image_path" =>"storage/image/f_meat3.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -133,7 +133,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"214",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat4.jpg",
+          "image_path" =>"storage/image/f_meat4.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -147,7 +147,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"279",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat5.jpg",
+          "image_path" =>"storage/image/f_meat5.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -161,7 +161,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"321",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat6.jpg",
+          "image_path" =>"storage/image/f_meat6.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -175,7 +175,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"169",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat7.jpg",
+          "image_path" =>"storage/image/f_meat7.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -189,7 +189,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"159",
           "category" =>"魚介類・肉・肉加工品・ハム・ソーセージ",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_meat8.jpg",
+          "image_path" =>"storage/image/f_meat8.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -203,7 +203,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"204",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk1.jpg",
+          "image_path" =>"storage/image/f_milk1.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -217,7 +217,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"279",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk2.jpg",
+          "image_path" =>"storage/image/f_milk2.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -231,7 +231,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"214",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk3.jpg",
+          "image_path" =>"storage/image/f_milk3.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -245,7 +245,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"139",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk4.jpg",
+          "image_path" =>"storage/image/f_milk4.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -259,7 +259,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"85",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk5.jpg",
+          "image_path" =>"storage/image/f_milk5.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -273,7 +273,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"150",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk6.jpg",
+          "image_path" =>"storage/image/f_milk6.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -287,7 +287,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"171",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk7.jpg",
+          "image_path" =>"storage/image/f_milk7.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -301,7 +301,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk8.jpg",
+          "image_path" =>"storage/image/f_milk8.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -315,7 +315,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"卵・乳製品・牛乳・豆乳・豆腐・納豆",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_milk9.jpg",
+          "image_path" =>"storage/image/f_milk9.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -329,7 +329,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"1167",
           "category" =>"お米・麺・パスタ・パン",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_carbs1.jpg",
+          "image_path" =>"storage/image/f_carbs1.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -343,7 +343,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"117",
           "category" =>"お米・麺・パスタ・パン",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_carbs2.jpg",
+          "image_path" =>"storage/image/f_carbs2.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -357,7 +357,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"193",
           "category" =>"お米・麺・パスタ・パン",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_carbs3.jpg",
+          "image_path" =>"storage/image/f_carbs3.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -371,7 +371,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"387",
           "category" =>"お米・麺・パスタ・パン",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_carbs4.jpg",
+          "image_path" =>"storage/image/f_carbs4.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -385,7 +385,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"128",
           "category" =>"お米・麺・パスタ・パン",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_carbs5.jpg",
+          "image_path" =>"storage/image/f_carbs5.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -399,7 +399,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"268",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning1.jpg",
+          "image_path" =>"storage/image/f_seasoning1.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -413,7 +413,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"171",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning2.jpg",
+          "image_path" =>"storage/image/f_seasoning2.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -427,7 +427,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"322",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning3.jpg",
+          "image_path" =>"storage/image/f_seasoning3.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -441,7 +441,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"182",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning4.jpg",
+          "image_path" =>"storage/image/f_seasoning4.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -455,7 +455,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"205",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning5.jpg",
+          "image_path" =>"storage/image/f_seasoning5.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -469,7 +469,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"171",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning6.jpg",
+          "image_path" =>"storage/image/f_seasoning6.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -483,7 +483,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"225",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning7.jpg",
+          "image_path" =>"storage/image/f_seasoning7.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -497,7 +497,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"205",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning8.jpg",
+          "image_path" =>"storage/image/f_seasoning8.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -511,7 +511,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"366",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning9.jpg",
+          "image_path" =>"storage/image/f_seasoning9.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -525,7 +525,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"322",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning10.jpg",
+          "image_path" =>"storage/image/f_seasoning10.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -539,7 +539,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"214",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning11.jpg",
+          "image_path" =>"storage/image/f_seasoning11.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -553,7 +553,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"117",
           "category" =>"食油・調味料",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_seasoning12.jpg",
+          "image_path" =>"storage/image/f_seasoning12.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -567,7 +567,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"214",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack1.jpg",
+          "image_path" =>"storage/image/f_snack1.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -581,7 +581,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"193",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack2.jpg",
+          "image_path" =>"storage/image/f_snack2.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -595,7 +595,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"117",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack3.jpg",
+          "image_path" =>"storage/image/f_snack3.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -609,7 +609,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"160",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack4.jpg",
+          "image_path" =>"storage/image/f_snack4.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -623,7 +623,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"193",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack5.jpg",
+          "image_path" =>"storage/image/f_snack5.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -637,7 +637,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack6.jpg",
+          "image_path" =>"storage/image/f_snack6.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -651,7 +651,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack7.jpg",
+          "image_path" =>"storage/image/f_snack7.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -665,7 +665,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack8.jpg",
+          "image_path" =>"storage/image/f_snack8.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -679,7 +679,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack9.jpg",
+          "image_path" =>"storage/image/f_snack9.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -693,7 +693,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack10.jpg",
+          "image_path" =>"storage/image/f_snack10.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -707,7 +707,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"139",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack11.jpg",
+          "image_path" =>"storage/image/f_snack11.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -721,7 +721,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"214",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack12.jpg",
+          "image_path" =>"storage/image/f_snack12.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -735,7 +735,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack13.jpg",
+          "image_path" =>"storage/image/f_snack13.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -749,7 +749,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"106",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack14.jpg",
+          "image_path" =>"storage/image/f_snack14.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -763,7 +763,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"108",
           "category" =>"菓子・スイーツ・アイス・飲料・お水",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_snack15.jpg",
+          "image_path" =>"storage/image/f_snack15.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -777,7 +777,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"218",
           "category" =>"衣料用洗剤・柔軟剤・衣料用漂白剤",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_washing1.jpg",
+          "image_path" =>"storage/image/f_washing1.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -791,7 +791,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"306",
           "category" =>"衣料用洗剤・柔軟剤・衣料用漂白剤",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_washing2.jpg",
+          "image_path" =>"storage/image/f_washing2.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -805,7 +805,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"208",
           "category" =>"衣料用洗剤・柔軟剤・衣料用漂白剤",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_washing3.jpg",
+          "image_path" =>"storage/image/f_washing3.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -819,7 +819,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"108",
           "category" =>"衣料用洗剤・柔軟剤・衣料用漂白剤",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_washing4.jpg",
+          "image_path" =>"storage/image/f_washing4.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
@@ -833,7 +833,7 @@ class ShopsTableSeeder extends Seeder
           "fee" =>"1028",
           "category" =>"衣料用洗剤・柔軟剤・衣料用漂白剤",
           "store" =>"イズミヤ",
-          "image_path" =>"storage/image/product/f_washing5.jpg",
+          "image_path" =>"storage/image/f_washing5.jpg",
           "created_at" =>date('Y-m-d H:i:s'),
           "updated_at" =>date('Y-m-d H:i:s'),
         ];
