@@ -4,7 +4,7 @@
 @section("content")
 <div class="container">
   <div class="container">
-    <h3 class="mb-4 text-center">{{Auth::user()->name}} 様の<br>カートの内訳</h3>
+    <p class="mb-4 text-center stroke">{{Auth::user()->name}} 様の<br>カートの内訳</p>
     <br>
     @if (session("message"))
       <p><i class="far fa-thumbs-up"></i> {{session("message")}}</p>
@@ -88,10 +88,10 @@
                       <label>本当に購入しますか？</label>
                   </div>
                   <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">戻る</button>
+                      <button type="button" class="btn btn-default modify" data-dismiss="modal">戻る</button>
                       <form method="post" action="/checkout">
                         @csrf
-                        <button type="submit" class="btn btn-warning" id="purchase">
+                        <button type="submit" class="btn btn-warning modify" id="purchase">
                           購入する
                         </button>
                       </form>
@@ -105,7 +105,7 @@
     <br>
     <br>
     <div class="text-center mt-5">
-      <a href="/select" class="btn btn-success">商品検索画面へ</a>
+      <a href="/select" class="btn btn-primary modify">商品検索画面へ</a>
     </div>
     @endif
   </div>

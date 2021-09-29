@@ -105,17 +105,17 @@
         <div class="row d-flex justify-content-between mx-0 px-0">
           <div class="col-3 mx-0">
             <a href="/select"><i class="fas fa-search-minus" style="color: #fff;"></i></a>
-            <h2 class="foot modify">商品検索</h2>
+            <h2 class="foot modify" style="white-space: nowrap;">商品検索</h2>
           </div>
           @guest
               <div class="col-3 mx-0">
                 <a href="{{ route('login') }}"><i class="fas fa-user-alt" style="color: #fff;"></i></a>
-                <h2 class="foot modify">会員入口</h2>
+                <h2 class="foot modify" style="white-space: nowrap;">会員入口</h2>
               </div>
               <!--@if (Route::has('register'))
               <div class="col-3 mx-0">
                 <a href="{{ route('register') }}"><i class="fas fa-user-edit" style="color: #fff;"></i></a>
-                <h2 class="foot modify">新規登録</h2>
+                <h2 class="foot modify" style="white-space: nowrap;">新規登録</h2>
               </div>
               @endif-->
           @else
@@ -126,16 +126,16 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                      @csrf
                 </form>
-                <h2 class="foot modify">会員出口</h2>
+                <h2 class="foot modify" style="white-space: nowrap;">会員出口</h2>
               </div>
               <div class="col-3 mx-0">
                 <a href="/cart"><i class="fas fa-shopping-cart" style="color: #fff;"></i></a>
-                <h2 class="foot modify">買物かご</h2>
+                <h2 class="foot modify" style="white-space: nowrap;">買物かご</h2>
               </div>
           @endguest
           <div class="col-3 mx-0">
             <a href="/#howtouse"><i class="fas fa-book-open" style="color: #fff;"></i></a>
-            <h2 class="foot modify">使い方</h2>
+            <h2 class="foot modify" style="white-space: nowrap;">使い方</h2>
           </div>
         </div>
       </footer>

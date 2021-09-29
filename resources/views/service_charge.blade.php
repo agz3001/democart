@@ -51,7 +51,7 @@
 </div>
 
 <div class="text-center">
-  <a href="/" class="btn btn-success modify">最初のページに戻る</a>
+  <a href="/" class="btn btn-primary modify">最初のページに戻る</a>
 </div>
 
 @endsection

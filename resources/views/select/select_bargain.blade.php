@@ -50,9 +50,9 @@
   <div class="col">
     <div class="container">
       <div>
-        <img src="{{asset('public/storage/image/ad/bg2.jpg')}}" style="width:100%; height:auto;">
+        <img src="{{asset('public/storage/image/bg2.jpg')}}" style="width:100%; height:auto;">
       </div>
-      <h3 class="mb-4 text-center">今月のおすすめ</h3>
+      <p class="mb-4 text-center stroke">今月のおすすめ</p>
       <!--javascript message-->
       <p id="drawer_message"></p>
       <!--javascript message end-->
@@ -60,8 +60,10 @@
         <div class="row">
           @foreach ($shops as $shop)
           <div class="col-6 col-sm-4 col-md-4">
-            <div class="imageNname">
+            <div class="imageN">
               <a href="{{url('/goods/detail', ['shop'=>$shop])}}"><img class="img-fluid" src="{{ asset($shop->image_path) }}" alt=""></a>
+            </div>
+            <div class="p_name">
               <span>{{$shop->name}}</span>
             </div>
             <div>
@@ -71,7 +73,7 @@
                 <input type="hidden" name="shop_id" value="{{$shop->id}}">
                 <label>数量 : </label>
                 <input type="number" name="amount" min="1" class="form_input_number" required>
-                <button type="submit" class="btn btn-primary cart_btn modify" data-toggle="tooltip" data-placement="bottom" data-html="true" title="お買い物かごに入れる"><i class="fas fa-shopping-cart"></i> カートへ</button>
+                <button type="submit" class="btn btn-orange cart_btn modify" data-toggle="tooltip" data-placement="bottom" data-html="true" title="お買い物かごに入れる"><i class="fas fa-shopping-cart"></i> カートへ</button>
               </form>
             </div>
           </div>
@@ -83,7 +85,7 @@
       {{$shops->links()}}
     </div>
     <div class="text-center mt-5">
-      <a href="javascript:history.back()" class="btn btn-success modify">選択画面に戻る</a>
+      <a href="/select" class="btn btn-primary modify">選択画面に戻る</a>
     </div>
   </div>
 </div>

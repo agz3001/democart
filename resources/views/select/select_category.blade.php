@@ -3,7 +3,7 @@
 @section("title", "分類選択")
 @section("content")
 <div class="container">
-  <h1 class="text-center">商品分類を選んでください</h1>
+  <p class="text-center stroke">商品分類を選んでください</p>
   <div class="row">
     <ul>
       <li><form method="get" action="/select/category/goods">
@@ -59,7 +59,7 @@
   </div>
   <br>
   <div class="text-center mt-5">
-    <a href="/select" class="btn btn-success modify">選択画面に戻る</a>
+    <a href="/select" class="btn btn-primary modify">選択画面に戻る</a>
   </div>
 </div>
 

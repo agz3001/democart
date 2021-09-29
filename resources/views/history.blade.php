@@ -4,7 +4,7 @@
 @section("content")
 <div class="container">
   <div class="container">
-    <h3 class="text-center mb-4">{{Auth::user()->name}} さんの注文履歴</h3>
+    <p class="mb-4 text-center stroke">{{Auth::user()->name}} さんの注文履歴</p>
     <select name="">
       <option value="1" selected>過去1ヵ月</option>
       <option value="3">過去3ヵ月</option>
@@ -40,6 +40,6 @@
   </div>
 </div>
 <div class="text-center mt-5">
-  <a href="javascript:history.back()" class="btn btn-success modify">商品検索に戻る</a>
+  <a href="javascript:history.back()" class="btn btn-primary modify">商品検索に戻る</a>
 </div>
 @endsection

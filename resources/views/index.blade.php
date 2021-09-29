@@ -119,8 +119,8 @@
 
 <div id="inquiry" class="container bg-light" style="margin-bottom: 80px;">
   <p class="text-center my-0">お問い合わせ</p>
-  <p class="text-center my-0"><a href="mailto:osaka.cart108@gmail.com" style="color: #1d3994;"><i class="far fa-envelope"></i> osaka.cart108@gmail.com</a></p>
-  <p class="text-center my-0"><a href="tel:117" style="color: #1d3994;"><i class="fas fa-phone-volume"></i> 090-xxxx-xxxx</a></p>
+  <p class="text-center my-0"><a href="mailto:osaka.cart108@gmail.com" style="color: #1d3994;"><i class="far fa-envelope"></i>&nbsp;osaka.cart108@gmail.com</a></p>
+  <p class="text-center my-0"><a href="tel:117" style="color: #1d3994;"><i class="fas fa-phone-volume"></i>&nbsp;090-xxxx-xxxx</a></p>
 </div>
 
 @endsection

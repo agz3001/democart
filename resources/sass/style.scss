@@ -9,8 +9,8 @@ h2{
   font-weight: bold;
   }
 .modify{
-  //font-weight: ;
-  //font-size: 1.15rem;
+  font-size: 1.15rem;
+  font-weight: bold;
 }
 
 #service-title ul{
@@ -38,6 +38,36 @@ h2{
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+/* ボタン色 */
+.btn-orange,
+.btn-orange.disabled, .btn-orange:disabled {
+  color: #fff;
+  background-color: #eb8f34;
+  border-color: #eb8f34;
+}
+
+/* focusされた時の枠線の色 */
+.btn-orange:focus, .btn-orange.focus,
+.btn-orange:not(:disabled):not(.disabled):active:focus, .btn-orange:not(:disabled):not(.disabled).active:focus,
+.show > .btn-orange.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(200, 123, 255, 0.5);
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-orange:hover {
+  color: #fff;
+  background-color: #eb8f34;
+  border-color: #eb8f34;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-orange:not(:disabled):not(.disabled):active, .btn-orange:not(:disabled):not(.disabled).active,
+.show > .btn-orange.dropdown-toggle {
+  color: #fff;
+  background-color: #eb8f34;
+  border-color: #eb8f34;
 }
 
 /* index */
@@ -143,10 +173,20 @@ ul {
   #output {
     display: none;
   }
-  .imageNname {
-    height:70%;
-    overflow:hidden;
+  /* select/select_category_goods画像の高さ */
+  .imageN {
+    height:45%;
   }
+  /* select/select_category_goods商品名の高さ */
+  .p_name{
+    height:140px;
+    overflow:auto;
+  }
+  /* /search画像の高さ */
+  .imageN_search{
+    height: 55%;
+  }
+
   .sidebar_fixed a{
 
     color: #1d3994;
@@ -194,8 +234,18 @@ ul {
   .price {
     white-space: nowrap;
   }
-  .imageNname {
-    height:70%;
+  /* select/select_category_goods画像の高さ */
+  .imageN {
+    height:35%;
+  }
+  /* select/select_category_goods商品名の高さ */
+  .p_name{
+    height:160px;
+    overflow:auto;
+  }
+  /* /search画像の高さ */
+  .imageN_search{
+    height: 45%;
   }
 
   .cart_btn {
@@ -229,6 +279,20 @@ ul {
   .price {
     white-space: nowrap;
   }
+  /* select/select_category_goods画像の高さ */
+  .imageN{
+    height: 35%;
+  }
+  /* select/select_category_goods商品名の高さ */
+  .p_name{
+    height:160px;
+    overflow:auto;
+  }
+  /* /search,画像の高さ */
+  .imageN_search{
+    height: 40%;
+  }
+
 /*
   img.img-fluid{
     width: 200px;

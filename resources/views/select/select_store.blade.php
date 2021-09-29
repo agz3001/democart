@@ -3,7 +3,7 @@
 @section("title", "店舗選択")
 @section("content")
 <div class="container">
-  <h1 style="text-align:center;">目的のお店を選んでください</h1>
+  <p class="text-center stroke">目的のお店を選んでください</p>
   <div class="row">
     <ul>
       <li><form method="get" action="/select/store/goods">
@@ -24,7 +24,7 @@
     </ul>
   </div>
   <br>
-  <div style="text-align:center;"><a href="javascript:history.back()" class="btn btn-success">選択画面に戻る</a></div>
+  <div class="text-center"><a href="/select" class="btn btn-primary modify">選択画面に戻る</a></div>
 </div>
 
 @endsection

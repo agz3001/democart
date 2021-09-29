@@ -3,7 +3,7 @@
 @section("title", "会員入口")
 @section('content')
 <div class="container">
-  <h1 class="text-center">{{ __('利用者様確認') }}</h1>
+  <p class="text-center stroke">{{ __('利用者様確認') }}</p>
   <p class="text-center">{{ __('●お客様の基本情報') }}</p>
 
   <div class="container-fluid" style="margin-bottom: 80px;">

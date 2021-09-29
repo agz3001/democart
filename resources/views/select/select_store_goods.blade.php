@@ -40,7 +40,7 @@
 
   <div class="col">
     <div class="container">
-      <h1 style="text-align:center;">「{{$store}}」 の商品一覧</h1>
+      <p class="text-center stroke">「{{$store}}」 の商品一覧</p>
       <div class="row">
         @foreach($shop as $shop)
         <div class="col-md-4">
@@ -53,14 +53,14 @@
               <input type="hidden" name="shop_id" value="{{$shop->id}}">
               <label>数量:</label>
               <input type="number" name="amount" min="1" class="form_input_number" required> 個
-              <input type="submit" value="カートに入れる" class="btn btn-primary">
+              <input type="submit" value="カートに入れる" class="btn btn-orange">
             </form><br>
           </div>
         </div>
         @endforeach
       </div>
       <br>
-      <div style="text-align:center;"><a href="javascript:history.back()" class="btn btn-success">店舗選択に戻る</a></div>
+      <div class="text-center"><a href="javascript:history.back()" class="btn btn-primary modify">店舗選択に戻る</a></div>
     </div>
   </div>
 </div>

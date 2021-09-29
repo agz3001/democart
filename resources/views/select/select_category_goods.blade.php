@@ -46,7 +46,7 @@
   <!--以下の部分がページ右側です。-->
   <div class="col">
     <div class="container">
-      <h3 class="mb-4 text-center">「{{$category}}」 の<br>商品一覧</h3>
+      <p class="mb-4 text-center stroke">「{{$category}}」 の<br>商品一覧</p>
       <!--javascript message-->
       <p id="drawer_message"></p>
       <!--javascript message end-->
@@ -54,18 +54,20 @@
         <div class="row">
           @foreach($shops as $shop)
           <div class="col-6 col-sm-4 col-md-4">
-            <div class="imageNname">
+            <div class="imageN">
               <a href="{{url('/goods/detail', ['shop'=>$shop])}}"><img class="img-fluid" src="{{ asset($shop->image_path) }}" alt=""></a>
+            </div>
+            <div class="p_name">
               <span>{{$shop->name}}</span>
             </div>
             <div>
               <p class="text-center price">¥{{$shop->fee}}<small>(税込8%)</small></p>
-              <form method="post" action="/cart" style="text-align:center;">
+              <form method="post" action="/cart" class="text-center">
                 @csrf
                 <input type="hidden" name="shop_id" value="{{$shop->id}}">
                 <label>数量 : </label>
                 <input type="number" name="amount" min="1" class="form_input_number" required>
-                <button type="submit" class="btn btn-primary cart_btn" data-toggle="tooltip" data-placement="bottom" data-html="true" title="お買い物かごに入れる"><i class="fas fa-shopping-cart"></i> カートへ</button>
+                <button type="submit" class="btn btn-orange cart_btn" data-toggle="tooltip" data-placement="bottom" data-html="true" title="お買い物かごに入れる"><i class="fas fa-shopping-cart"></i> カートへ</button>
               </form>
             </div>
           </div>
@@ -76,7 +78,7 @@
         {{$shops->appends(["category"=>$category])->links()}}
       </div>
       <div class="text-center mt-5">
-        <a href="{{url('/select/category')}}" class="btn btn-success">商品分類に戻る</a>
+        <a href="{{url('/select/category')}}" class="btn btn-primary modify">商品分類に戻る</a>
       </div>
     </div>
   </div>
