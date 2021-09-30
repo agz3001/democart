@@ -53,8 +53,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
   <!-- SweetAlert2のCSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.css">
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+  <link href="{{ asset('public/css/style.css') }}" rel="stylesheet">
 
 </head>
 <body style="background-color:#ffffff;">
