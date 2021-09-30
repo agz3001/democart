@@ -31,6 +31,8 @@ Route::get("/service_charge", function(){
   return view("/service_charge");});
 Route::get("/company", function(){
   return view("/company");});
+Route::get("/terms", function(){
+  return view("/terms");});
 
 Route::get("/", "ShopController@index");
 Route::get("/select", "ShopController@select");

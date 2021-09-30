@@ -123,4 +123,8 @@
   <p class="text-center my-0"><a href="tel:117" style="color: #1d3994;"><i class="fas fa-phone-volume"></i>&nbsp;090-xxxx-xxxx</a></p>
 </div>
 
+<div class="d-flex justify-content-around">
+  <u><a href="/company">運営会社</a></u>
+  <u><a href="/terms">利用規約</a></u>
+</div>
 @endsection

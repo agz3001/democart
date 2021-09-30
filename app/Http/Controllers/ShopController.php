@@ -338,10 +338,4 @@ class ShopController extends Controller
 
     }
 
-    public function company()
-    {
-        return view("company");
-    }
-
-
 }
