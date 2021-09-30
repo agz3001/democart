@@ -44,8 +44,8 @@ h2{
 .btn-orange,
 .btn-orange.disabled, .btn-orange:disabled {
   color: #fff;
-  background-color: #eb8f34;
-  border-color: #eb8f34;
+  background-color: #ffd17d;
+  border-color: #ffd17d;
 }
 
 /* focusされた時の枠線の色 */
@@ -58,16 +58,16 @@ h2{
 /* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
 .btn-orange:hover {
   color: #fff;
-  background-color: #eb8f34;
-  border-color: #eb8f34;
+  background-color: #ffd17d;
+  border-color: #ffd17d;
 }
 
 /* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
 .btn-orange:not(:disabled):not(.disabled):active, .btn-orange:not(:disabled):not(.disabled).active,
 .show > .btn-orange.dropdown-toggle {
   color: #fff;
-  background-color: #eb8f34;
-  border-color: #eb8f34;
+  background-color: #ffd17d;
+  border-color: #ffd17d;
 }
 
 /* index */
