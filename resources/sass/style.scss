@@ -40,12 +40,12 @@ h2{
   margin-right: 5px;
 }
 
-/* ボタン色 */
+/* ボタン色,オレンジ */
 .btn-orange,
 .btn-orange.disabled, .btn-orange:disabled {
   color: #fff;
-  background-color: #ffd17d;
-  border-color: #ffd17d;
+  background-color: #eb8f34;
+  border-color: #eb8f34;
 }
 
 /* focusされた時の枠線の色 */
@@ -58,13 +58,43 @@ h2{
 /* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
 .btn-orange:hover {
   color: #fff;
-  background-color: #ffd17d;
-  border-color: #ffd17d;
+  background-color: #eb8f34;
+  border-color: #eb8f34;
 }
 
 /* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
 .btn-orange:not(:disabled):not(.disabled):active, .btn-orange:not(:disabled):not(.disabled).active,
 .show > .btn-orange.dropdown-toggle {
+  color: #fff;
+  background-color: #eb8f34;
+  border-color: #eb8f34;
+}
+
+/* ボタン色,オレンジーサブ */
+.btn-orange-sub,
+.btn-orange-sub.disabled, .btn-orange-sub:disabled {
+  color: #fff;
+  background-color: #ffd17d;
+  border-color: #ffd17d;
+}
+
+/* focusされた時の枠線の色 */
+.btn-orange-sub:focus, .btn-orange-sub.focus,
+.btn-orange-sub:not(:disabled):not(.disabled):active:focus, .btn-orange-sub:not(:disabled):not(.disabled).active:focus,
+.show > .btn-orange-sub.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(200, 123, 255, 0.5);
+}
+
+/* hover時（マウスカーソルを重ねた時）の色（通常より濃いor暗めの色を指定） */
+.btn-orange-sub:hover {
+  color: #fff;
+  background-color: #ffd17d;
+  border-color: #ffd17d;
+}
+
+/* active時の色（hover時と同等かさらに濃いor暗めの色を指定） */
+.btn-orange-sub:not(:disabled):not(.disabled):active, .btn-orange-sub:not(:disabled):not(.disabled).active,
+.show > .btn-orange-sub.dropdown-toggle {
   color: #fff;
   background-color: #ffd17d;
   border-color: #ffd17d;
